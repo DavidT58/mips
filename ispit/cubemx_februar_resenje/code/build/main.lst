@@ -1,0 +1,340 @@
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"main.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.Error_Handler,"ax",%progbits
+  16              		.align	1
+  17              		.global	Error_Handler
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	Error_Handler:
+  25              	.LFB71:
+  26              		.file 1 "../Core/Src/main.c"
+   1:../Core/Src/main.c **** 
+  27              		.loc 1 179 1 view -0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              		.loc 1 182 3 view .LVU1
+  34              	.LBB4:
+  35              	.LBI4:
+  36              		.file 2 "../Drivers/CMSIS/Include/cmsis_gcc.h"
+   1:../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  37              		.loc 2 140 27 view .LVU2
+  38              	.LBB5:
+  39              		.loc 2 142 3 view .LVU3
+  40              		.syntax unified
+  41              	@ 142 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+  42 0000 72B6     		cpsid i
+  43              	@ 0 "" 2
+  44              		.thumb
+  45              		.syntax unified
+  46              	.L2:
+  47              	.LBE5:
+  48              	.LBE4:
+  49              		.loc 1 183 3 discriminator 1 view .LVU4
+  50              		.loc 1 185 3 discriminator 1 view .LVU5
+  51              		.loc 1 183 9 discriminator 1 view .LVU6
+  52 0002 FEE7     		b	.L2
+  53              		.cfi_endproc
+  54              	.LFE71:
+  56              		.section	.text.SystemClock_Config,"ax",%progbits
+  57              		.align	1
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s 			page 2
+
+
+  58              		.global	SystemClock_Config
+  59              		.syntax unified
+  60              		.thumb
+  61              		.thumb_func
+  62              		.fpu softvfp
+  64              	SystemClock_Config:
+  65              	.LFB70:
+  66              		.loc 1 123 1 view -0
+  67              		.cfi_startproc
+  68              		@ args = 0, pretend = 0, frame = 80
+  69              		@ frame_needed = 0, uses_anonymous_args = 0
+  70 0000 00B5     		push	{lr}
+  71              	.LCFI0:
+  72              		.cfi_def_cfa_offset 4
+  73              		.cfi_offset 14, -4
+  74 0002 95B0     		sub	sp, sp, #84
+  75              	.LCFI1:
+  76              		.cfi_def_cfa_offset 88
+  77              		.loc 1 124 3 view .LVU8
+  78              		.loc 1 124 22 is_stmt 0 view .LVU9
+  79 0004 2822     		movs	r2, #40
+  80 0006 0021     		movs	r1, #0
+  81 0008 0DEB0200 		add	r0, sp, r2
+  82 000c 184B     		ldr	r3, .L11
+  83 000e 9847     		blx	r3
+  84              	.LVL0:
+  85              		.loc 1 125 3 is_stmt 1 view .LVU10
+  86              		.loc 1 125 22 is_stmt 0 view .LVU11
+  87 0010 0023     		movs	r3, #0
+  88 0012 0593     		str	r3, [sp, #20]
+  89 0014 0693     		str	r3, [sp, #24]
+  90 0016 0793     		str	r3, [sp, #28]
+  91 0018 0893     		str	r3, [sp, #32]
+  92 001a 0993     		str	r3, [sp, #36]
+  93              		.loc 1 126 3 is_stmt 1 view .LVU12
+  94              		.loc 1 126 28 is_stmt 0 view .LVU13
+  95 001c 0193     		str	r3, [sp, #4]
+  96 001e 0293     		str	r3, [sp, #8]
+  97 0020 0393     		str	r3, [sp, #12]
+  98 0022 0493     		str	r3, [sp, #16]
+  99              		.loc 1 131 3 is_stmt 1 view .LVU14
+ 100              		.loc 1 131 36 is_stmt 0 view .LVU15
+ 101 0024 0223     		movs	r3, #2
+ 102 0026 0A93     		str	r3, [sp, #40]
+ 103              		.loc 1 132 3 is_stmt 1 view .LVU16
+ 104              		.loc 1 132 30 is_stmt 0 view .LVU17
+ 105 0028 0123     		movs	r3, #1
+ 106 002a 0E93     		str	r3, [sp, #56]
+ 107              		.loc 1 133 3 is_stmt 1 view .LVU18
+ 108              		.loc 1 133 41 is_stmt 0 view .LVU19
+ 109 002c 1023     		movs	r3, #16
+ 110 002e 0F93     		str	r3, [sp, #60]
+ 111              		.loc 1 134 3 is_stmt 1 view .LVU20
+ 112              		.loc 1 135 3 view .LVU21
+ 113              		.loc 1 135 7 is_stmt 0 view .LVU22
+ 114 0030 0AA8     		add	r0, sp, #40
+ 115 0032 104B     		ldr	r3, .L11+4
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s 			page 3
+
+
+ 116 0034 9847     		blx	r3
+ 117              	.LVL1:
+ 118              		.loc 1 135 6 view .LVU23
+ 119 0036 A8B9     		cbnz	r0, .L8
+ 120              		.loc 1 141 3 is_stmt 1 view .LVU24
+ 121              		.loc 1 141 31 is_stmt 0 view .LVU25
+ 122 0038 0F23     		movs	r3, #15
+ 123 003a 0593     		str	r3, [sp, #20]
+ 124              		.loc 1 143 3 is_stmt 1 view .LVU26
+ 125              		.loc 1 143 34 is_stmt 0 view .LVU27
+ 126 003c 0021     		movs	r1, #0
+ 127 003e 0691     		str	r1, [sp, #24]
+ 128              		.loc 1 144 3 is_stmt 1 view .LVU28
+ 129              		.loc 1 144 35 is_stmt 0 view .LVU29
+ 130 0040 0791     		str	r1, [sp, #28]
+ 131              		.loc 1 145 3 is_stmt 1 view .LVU30
+ 132              		.loc 1 145 36 is_stmt 0 view .LVU31
+ 133 0042 0891     		str	r1, [sp, #32]
+ 134              		.loc 1 146 3 is_stmt 1 view .LVU32
+ 135              		.loc 1 146 36 is_stmt 0 view .LVU33
+ 136 0044 0991     		str	r1, [sp, #36]
+ 137              		.loc 1 148 3 is_stmt 1 view .LVU34
+ 138              		.loc 1 148 7 is_stmt 0 view .LVU35
+ 139 0046 05A8     		add	r0, sp, #20
+ 140 0048 0B4B     		ldr	r3, .L11+8
+ 141 004a 9847     		blx	r3
+ 142              	.LVL2:
+ 143              		.loc 1 148 6 view .LVU36
+ 144 004c 60B9     		cbnz	r0, .L9
+ 145              		.loc 1 152 3 is_stmt 1 view .LVU37
+ 146              		.loc 1 152 38 is_stmt 0 view .LVU38
+ 147 004e 0223     		movs	r3, #2
+ 148 0050 0193     		str	r3, [sp, #4]
+ 149              		.loc 1 153 3 is_stmt 1 view .LVU39
+ 150              		.loc 1 153 35 is_stmt 0 view .LVU40
+ 151 0052 0023     		movs	r3, #0
+ 152 0054 0393     		str	r3, [sp, #12]
+ 153              		.loc 1 154 3 is_stmt 1 view .LVU41
+ 154              		.loc 1 154 7 is_stmt 0 view .LVU42
+ 155 0056 01A8     		add	r0, sp, #4
+ 156 0058 084B     		ldr	r3, .L11+12
+ 157 005a 9847     		blx	r3
+ 158              	.LVL3:
+ 159              		.loc 1 154 6 view .LVU43
+ 160 005c 30B9     		cbnz	r0, .L10
+ 161              		.loc 1 158 1 view .LVU44
+ 162 005e 15B0     		add	sp, sp, #84
+ 163              	.LCFI2:
+ 164              		.cfi_remember_state
+ 165              		.cfi_def_cfa_offset 4
+ 166              		@ sp needed
+ 167 0060 5DF804FB 		ldr	pc, [sp], #4
+ 168              	.L8:
+ 169              	.LCFI3:
+ 170              		.cfi_restore_state
+ 171              		.loc 1 137 5 is_stmt 1 view .LVU45
+ 172 0064 064B     		ldr	r3, .L11+16
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s 			page 4
+
+
+ 173 0066 9847     		blx	r3
+ 174              	.LVL4:
+ 175              	.L9:
+ 176              		.loc 1 150 5 view .LVU46
+ 177 0068 054B     		ldr	r3, .L11+16
+ 178 006a 9847     		blx	r3
+ 179              	.LVL5:
+ 180              	.L10:
+ 181              		.loc 1 156 5 view .LVU47
+ 182 006c 044B     		ldr	r3, .L11+16
+ 183 006e 9847     		blx	r3
+ 184              	.LVL6:
+ 185              	.L12:
+ 186              		.align	2
+ 187              	.L11:
+ 188 0070 00000000 		.word	memset
+ 189 0074 00000000 		.word	HAL_RCC_OscConfig
+ 190 0078 00000000 		.word	HAL_RCC_ClockConfig
+ 191 007c 00000000 		.word	HAL_RCCEx_PeriphCLKConfig
+ 192 0080 00000000 		.word	Error_Handler
+ 193              		.cfi_endproc
+ 194              	.LFE70:
+ 196              		.section	.text.main,"ax",%progbits
+ 197              		.align	1
+ 198              		.global	main
+ 199              		.syntax unified
+ 200              		.thumb
+ 201              		.thumb_func
+ 202              		.fpu softvfp
+ 204              	main:
+ 205              	.LFB69:
+ 206              		.loc 1 70 1 view -0
+ 207              		.cfi_startproc
+ 208              		@ Volatile: function does not return.
+ 209              		@ args = 0, pretend = 0, frame = 0
+ 210              		@ frame_needed = 0, uses_anonymous_args = 0
+ 211 0000 08B5     		push	{r3, lr}
+ 212              	.LCFI4:
+ 213              		.cfi_def_cfa_offset 8
+ 214              		.cfi_offset 3, -8
+ 215              		.cfi_offset 14, -4
+ 216              		.loc 1 78 3 view .LVU49
+ 217 0002 0A4B     		ldr	r3, .L16
+ 218 0004 9847     		blx	r3
+ 219              	.LVL7:
+ 220              		.loc 1 85 3 view .LVU50
+ 221 0006 0A4B     		ldr	r3, .L16+4
+ 222 0008 9847     		blx	r3
+ 223              	.LVL8:
+ 224              		.loc 1 92 3 view .LVU51
+ 225 000a 0A4B     		ldr	r3, .L16+8
+ 226 000c 9847     		blx	r3
+ 227              	.LVL9:
+ 228              		.loc 1 93 3 view .LVU52
+ 229 000e 0A4B     		ldr	r3, .L16+12
+ 230 0010 9847     		blx	r3
+ 231              	.LVL10:
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s 			page 5
+
+
+ 232              		.loc 1 94 3 view .LVU53
+ 233 0012 0A4B     		ldr	r3, .L16+16
+ 234 0014 9847     		blx	r3
+ 235              	.LVL11:
+ 236              		.loc 1 95 3 view .LVU54
+ 237 0016 0A4B     		ldr	r3, .L16+20
+ 238 0018 9847     		blx	r3
+ 239              	.LVL12:
+ 240              		.loc 1 97 3 view .LVU55
+ 241 001a 0A4B     		ldr	r3, .L16+24
+ 242 001c 9847     		blx	r3
+ 243              	.LVL13:
+ 244              		.loc 1 101 3 view .LVU56
+ 245 001e 0A4B     		ldr	r3, .L16+28
+ 246 0020 9847     		blx	r3
+ 247              	.LVL14:
+ 248              		.loc 1 102 3 view .LVU57
+ 249 0022 0A4B     		ldr	r3, .L16+32
+ 250 0024 9847     		blx	r3
+ 251              	.LVL15:
+ 252              		.loc 1 104 3 view .LVU58
+ 253 0026 0A4B     		ldr	r3, .L16+36
+ 254 0028 9847     		blx	r3
+ 255              	.LVL16:
+ 256              	.L14:
+ 257              		.loc 1 109 3 discriminator 1 view .LVU59
+ 258              		.loc 1 114 3 discriminator 1 view .LVU60
+ 259              		.loc 1 109 9 discriminator 1 view .LVU61
+ 260 002a FEE7     		b	.L14
+ 261              	.L17:
+ 262              		.align	2
+ 263              	.L16:
+ 264 002c 00000000 		.word	HAL_Init
+ 265 0030 00000000 		.word	SystemClock_Config
+ 266 0034 00000000 		.word	MX_GPIO_Init
+ 267 0038 00000000 		.word	MX_ADC1_Init
+ 268 003c 00000000 		.word	MX_USART1_UART_Init
+ 269 0040 00000000 		.word	MX_TIM1_Init
+ 270 0044 00000000 		.word	init
+ 271 0048 00000000 		.word	osKernelInitialize
+ 272 004c 00000000 		.word	MX_FREERTOS_Init
+ 273 0050 00000000 		.word	osKernelStart
+ 274              		.cfi_endproc
+ 275              	.LFE69:
+ 277              		.global	overflow
+ 278              		.section	.bss.overflow,"aw",%nobits
+ 279              		.align	2
+ 282              	overflow:
+ 283 0000 00000000 		.space	4
+ 284              		.text
+ 285              	.Letext0:
+ 286              		.file 3 "../d:\\faks\\4. godina\\7.semestar\\mips\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 287              		.file 4 "../d:\\faks\\4. godina\\7.semestar\\mips\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 288              		.file 5 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
+ 289              		.file 6 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
+ 290              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 291              		.file 8 "../Core/Inc/gpio.h"
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s 			page 6
+
+
+ 292              		.file 9 "../Core/Inc/adc.h"
+ 293              		.file 10 "../Core/Inc/usart.h"
+ 294              		.file 11 "../Core/Inc/tim.h"
+ 295              		.file 12 "../Core/Inc/homework.h"
+ 296              		.file 13 "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
+ 297              		.file 14 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 298              		.file 15 "../<built-in>"
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.c
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:16     .text.Error_Handler:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:24     .text.Error_Handler:0000000000000000 Error_Handler
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:57     .text.SystemClock_Config:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:64     .text.SystemClock_Config:0000000000000000 SystemClock_Config
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:188    .text.SystemClock_Config:0000000000000070 $d
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:197    .text.main:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:204    .text.main:0000000000000000 main
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:264    .text.main:000000000000002c $d
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:282    .bss.overflow:0000000000000000 overflow
+C:\Users\Nikola\AppData\Local\Temp\ccI6OMso.s:279    .bss.overflow:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+memset
+HAL_RCC_OscConfig
+HAL_RCC_ClockConfig
+HAL_RCCEx_PeriphCLKConfig
+HAL_Init
+MX_GPIO_Init
+MX_ADC1_Init
+MX_USART1_UART_Init
+MX_TIM1_Init
+init
+osKernelInitialize
+MX_FREERTOS_Init
+osKernelStart

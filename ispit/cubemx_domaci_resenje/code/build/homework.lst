@@ -1,0 +1,473 @@
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"homework.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.global	__aeabi_f2uiz
+  16              		.section	.text.homeworkTask,"ax",%progbits
+  17              		.align	1
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	homeworkTask:
+  25              	.LVL0:
+  26              	.LFB4:
+  27              		.file 1 "../Core/Src/homework.c"
+   1:../Core/Src/homework.c **** 
+  28              		.loc 1 26 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 16
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 26 1 is_stmt 0 view .LVU1
+  33 0000 30B5     		push	{r4, r5, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 12
+  36              		.cfi_offset 4, -12
+  37              		.cfi_offset 5, -8
+  38              		.cfi_offset 14, -4
+  39 0002 85B0     		sub	sp, sp, #20
+  40              	.LCFI1:
+  41              		.cfi_def_cfa_offset 32
+  42              		.loc 1 27 2 is_stmt 1 view .LVU2
+  43              		.loc 1 27 7 is_stmt 0 view .LVU3
+  44 0004 364B     		ldr	r3, .L20
+  45 0006 6C46     		mov	r4, sp
+  46 0008 0FCB     		ldm	r3, {r0, r1, r2, r3}
+  47              	.LVL1:
+  48              		.loc 1 27 7 view .LVU4
+  49 000a 07C4     		stmia	r4!, {r0, r1, r2}
+  50 000c 2380     		strh	r3, [r4]	@ movhi
+  51 000e 0024     		movs	r4, #0
+  52 0010 ADF80E40 		strh	r4, [sp, #14]	@ movhi
+  53              		.loc 1 28 2 is_stmt 1 view .LVU5
+  54 0014 8021     		movs	r1, #128
+  55 0016 2046     		mov	r0, r4
+  56 0018 324B     		ldr	r3, .L20+4
+  57 001a 9847     		blx	r3
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 2
+
+
+  58              	.LVL2:
+  59              		.loc 1 30 2 view .LVU6
+  60              	.LBB2:
+  61              		.loc 1 30 7 view .LVU7
+  62              		.loc 1 30 2 is_stmt 0 view .LVU8
+  63 001c 0BE0     		b	.L2
+  64              	.LVL3:
+  65              	.L3:
+  66              		.loc 1 32 3 is_stmt 1 discriminator 3 view .LVU9
+  67              		.loc 1 32 39 is_stmt 0 discriminator 3 view .LVU10
+  68 001e 04AB     		add	r3, sp, #16
+  69 0020 2344     		add	r3, r3, r4
+  70 0022 13F8105C 		ldrb	r5, [r3, #-16]	@ zero_extendqisi2
+  71              		.loc 1 32 3 discriminator 3 view .LVU11
+  72 0026 2946     		mov	r1, r5
+  73 0028 0120     		movs	r0, #1
+  74 002a 2E4B     		ldr	r3, .L20+4
+  75 002c 9847     		blx	r3
+  76              	.LVL4:
+  77              		.loc 1 33 3 is_stmt 1 discriminator 3 view .LVU12
+  78 002e 2846     		mov	r0, r5
+  79 0030 2D4B     		ldr	r3, .L20+8
+  80 0032 9847     		blx	r3
+  81              	.LVL5:
+  82              		.loc 1 30 31 discriminator 3 view .LVU13
+  83              		.loc 1 30 32 is_stmt 0 discriminator 3 view .LVU14
+  84 0034 0134     		adds	r4, r4, #1
+  85              	.LVL6:
+  86              	.L2:
+  87              		.loc 1 30 23 is_stmt 1 discriminator 1 view .LVU15
+  88              		.loc 1 30 2 is_stmt 0 discriminator 1 view .LVU16
+  89 0036 0F2C     		cmp	r4, #15
+  90 0038 F1D9     		bls	.L3
+  91 003a 37E0     		b	.L13
+  92              	.LVL7:
+  93              	.L14:
+  94              		.loc 1 30 2 discriminator 1 view .LVU17
+  95              	.LBE2:
+  96              	.LBB3:
+  97              		.loc 1 45 19 view .LVU18
+  98 003c 0025     		movs	r5, #0
+  99              	.L4:
+ 100              	.LVL8:
+ 101              		.loc 1 55 3 is_stmt 1 view .LVU19
+ 102              	.LBB4:
+ 103              		.loc 1 55 8 view .LVU20
+ 104              		.loc 1 55 17 is_stmt 0 view .LVU21
+ 105 003e 0024     		movs	r4, #0
+ 106              		.loc 1 55 3 view .LVU22
+ 107 0040 04E0     		b	.L5
+ 108              	.LVL9:
+ 109              	.L15:
+ 110              		.loc 1 55 3 view .LVU23
+ 111              	.LBE4:
+ 112              		.loc 1 53 19 view .LVU24
+ 113 0042 0225     		movs	r5, #2
+ 114 0044 FBE7     		b	.L4
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 3
+
+
+ 115              	.LVL10:
+ 116              	.L6:
+ 117              	.LBB5:
+ 118              		.loc 1 63 5 is_stmt 1 view .LVU25
+ 119 0046 294B     		ldr	r3, .L20+12
+ 120 0048 9847     		blx	r3
+ 121              	.LVL11:
+ 122              	.L7:
+ 123              		.loc 1 55 60 discriminator 2 view .LVU26
+ 124              		.loc 1 55 61 is_stmt 0 discriminator 2 view .LVU27
+ 125 004a 0134     		adds	r4, r4, #1
+ 126              	.LVL12:
+ 127              	.L5:
+ 128              		.loc 1 55 24 is_stmt 1 discriminator 1 view .LVU28
+ 129              		.loc 1 55 47 is_stmt 0 discriminator 1 view .LVU29
+ 130 004c 284B     		ldr	r3, .L20+16
+ 131 004e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 132 0050 AB1A     		subs	r3, r5, r2
+ 133              		.loc 1 55 28 discriminator 1 view .LVU30
+ 134 0052 002B     		cmp	r3, #0
+ 135 0054 B8BF     		it	lt
+ 136 0056 5B42     		rsblt	r3, r3, #0
+ 137              		.loc 1 55 3 discriminator 1 view .LVU31
+ 138 0058 A342     		cmp	r3, r4
+ 139 005a 04D9     		bls	.L17
+ 140              		.loc 1 57 4 is_stmt 1 view .LVU32
+ 141              		.loc 1 57 7 is_stmt 0 view .LVU33
+ 142 005c AA42     		cmp	r2, r5
+ 143 005e F2D2     		bcs	.L6
+ 144              		.loc 1 59 5 is_stmt 1 view .LVU34
+ 145 0060 244B     		ldr	r3, .L20+20
+ 146 0062 9847     		blx	r3
+ 147              	.LVL13:
+ 148 0064 F1E7     		b	.L7
+ 149              	.L17:
+ 150              	.LBE5:
+ 151              		.loc 1 66 3 view .LVU35
+ 152              		.loc 1 66 12 is_stmt 0 view .LVU36
+ 153 0066 224B     		ldr	r3, .L20+16
+ 154 0068 1D70     		strb	r5, [r3]
+ 155              		.loc 1 69 3 is_stmt 1 view .LVU37
+ 156 006a 8D21     		movs	r1, #141
+ 157 006c 0020     		movs	r0, #0
+ 158 006e 1D4B     		ldr	r3, .L20+4
+ 159 0070 9847     		blx	r3
+ 160              	.LVL14:
+ 161              		.loc 1 71 3 view .LVU38
+ 162              	.LBB6:
+ 163              		.loc 1 71 8 view .LVU39
+ 164              		.loc 1 71 17 is_stmt 0 view .LVU40
+ 165 0072 0024     		movs	r4, #0
+ 166              	.LVL15:
+ 167              	.L9:
+ 168              		.loc 1 71 24 is_stmt 1 discriminator 1 view .LVU41
+ 169              		.loc 1 71 28 is_stmt 0 discriminator 1 view .LVU42
+ 170 0074 2048     		ldr	r0, .L20+24
+ 171 0076 214B     		ldr	r3, .L20+28
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 4
+
+
+ 172 0078 9847     		blx	r3
+ 173              	.LVL16:
+ 174              		.loc 1 71 3 discriminator 1 view .LVU43
+ 175 007a A042     		cmp	r0, r4
+ 176 007c 09D9     		bls	.L18
+ 177              		.loc 1 73 4 is_stmt 1 discriminator 3 view .LVU44
+ 178              		.loc 1 73 41 is_stmt 0 discriminator 3 view .LVU45
+ 179 007e 1E4D     		ldr	r5, .L20+24
+ 180              		.loc 1 73 4 discriminator 3 view .LVU46
+ 181 0080 295D     		ldrb	r1, [r5, r4]	@ zero_extendqisi2
+ 182 0082 0120     		movs	r0, #1
+ 183 0084 174B     		ldr	r3, .L20+4
+ 184 0086 9847     		blx	r3
+ 185              	.LVL17:
+ 186              		.loc 1 74 4 is_stmt 1 discriminator 3 view .LVU47
+ 187 0088 285D     		ldrb	r0, [r5, r4]	@ zero_extendqisi2
+ 188 008a 174B     		ldr	r3, .L20+8
+ 189 008c 9847     		blx	r3
+ 190              	.LVL18:
+ 191              		.loc 1 71 46 discriminator 3 view .LVU48
+ 192              		.loc 1 71 47 is_stmt 0 discriminator 3 view .LVU49
+ 193 008e 0134     		adds	r4, r4, #1
+ 194              	.LVL19:
+ 195              		.loc 1 71 47 discriminator 3 view .LVU50
+ 196 0090 F0E7     		b	.L9
+ 197              	.L18:
+ 198              		.loc 1 71 47 discriminator 3 view .LVU51
+ 199              	.LBE6:
+ 200              		.loc 1 77 3 is_stmt 1 view .LVU52
+ 201 0092 C820     		movs	r0, #200
+ 202 0094 1A4B     		ldr	r3, .L20+32
+ 203 0096 9847     		blx	r3
+ 204              	.LVL20:
+ 205              		.loc 1 80 3 view .LVU53
+ 206 0098 8D21     		movs	r1, #141
+ 207 009a 0020     		movs	r0, #0
+ 208 009c 114B     		ldr	r3, .L20+4
+ 209 009e 9847     		blx	r3
+ 210              	.LVL21:
+ 211              		.loc 1 82 3 view .LVU54
+ 212              	.LBB7:
+ 213              		.loc 1 82 8 view .LVU55
+ 214              		.loc 1 82 17 is_stmt 0 view .LVU56
+ 215 00a0 0024     		movs	r4, #0
+ 216              	.LVL22:
+ 217              	.L11:
+ 218              		.loc 1 82 24 is_stmt 1 discriminator 1 view .LVU57
+ 219              		.loc 1 82 28 is_stmt 0 discriminator 1 view .LVU58
+ 220 00a2 1548     		ldr	r0, .L20+24
+ 221 00a4 154B     		ldr	r3, .L20+28
+ 222 00a6 9847     		blx	r3
+ 223              	.LVL23:
+ 224              		.loc 1 82 3 discriminator 1 view .LVU59
+ 225 00a8 A042     		cmp	r0, r4
+ 226 00aa 10D8     		bhi	.L19
+ 227              	.LVL24:
+ 228              	.L13:
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 5
+
+
+ 229              		.loc 1 82 3 discriminator 1 view .LVU60
+ 230              	.LBE7:
+ 231              	.LBE3:
+ 232              		.loc 1 36 2 is_stmt 1 view .LVU61
+ 233              	.LBB9:
+ 234              		.loc 1 38 3 view .LVU62
+ 235              		.loc 1 38 15 is_stmt 0 view .LVU63
+ 236 00ac 154B     		ldr	r3, .L20+36
+ 237 00ae 9847     		blx	r3
+ 238              	.LVL25:
+ 239              		.loc 1 38 13 view .LVU64
+ 240 00b0 154B     		ldr	r3, .L20+40
+ 241 00b2 9847     		blx	r3
+ 242              	.LVL26:
+ 243 00b4 154C     		ldr	r4, .L20+44
+ 244 00b6 2060     		str	r0, [r4]
+ 245              		.loc 1 39 3 is_stmt 1 view .LVU65
+ 246 00b8 0A22     		movs	r2, #10
+ 247 00ba 0F49     		ldr	r1, .L20+24
+ 248 00bc 144B     		ldr	r3, .L20+48
+ 249 00be 9847     		blx	r3
+ 250              	.LVL27:
+ 251              		.loc 1 42 3 view .LVU66
+ 252              		.loc 1 43 3 view .LVU67
+ 253              		.loc 1 43 17 is_stmt 0 view .LVU68
+ 254 00c0 2368     		ldr	r3, [r4]
+ 255              		.loc 1 43 6 view .LVU69
+ 256 00c2 1D2B     		cmp	r3, #29
+ 257 00c4 BAD9     		bls	.L14
+ 258              		.loc 1 47 8 is_stmt 1 view .LVU70
+ 259              		.loc 1 47 11 is_stmt 0 view .LVU71
+ 260 00c6 222B     		cmp	r3, #34
+ 261 00c8 BBD8     		bhi	.L15
+ 262              		.loc 1 49 19 view .LVU72
+ 263 00ca 0125     		movs	r5, #1
+ 264 00cc B7E7     		b	.L4
+ 265              	.LVL28:
+ 266              	.L19:
+ 267              	.LBB8:
+ 268              		.loc 1 84 4 is_stmt 1 discriminator 3 view .LVU73
+ 269 00ce 2021     		movs	r1, #32
+ 270 00d0 0120     		movs	r0, #1
+ 271 00d2 044B     		ldr	r3, .L20+4
+ 272 00d4 9847     		blx	r3
+ 273              	.LVL29:
+ 274              		.loc 1 85 4 discriminator 3 view .LVU74
+ 275 00d6 0820     		movs	r0, #8
+ 276 00d8 034B     		ldr	r3, .L20+8
+ 277 00da 9847     		blx	r3
+ 278              	.LVL30:
+ 279              		.loc 1 82 46 discriminator 3 view .LVU75
+ 280              		.loc 1 82 47 is_stmt 0 discriminator 3 view .LVU76
+ 281 00dc 0134     		adds	r4, r4, #1
+ 282              	.LVL31:
+ 283              		.loc 1 82 47 discriminator 3 view .LVU77
+ 284 00de E0E7     		b	.L11
+ 285              	.L21:
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 6
+
+
+ 286              		.align	2
+ 287              	.L20:
+ 288 00e0 00000000 		.word	.LANCHOR0
+ 289 00e4 00000000 		.word	LCD_CommandEnqueue
+ 290 00e8 00000000 		.word	UART_AsyncTransmitCharacter
+ 291 00ec 00000000 		.word	MOTOR_SpeedDecrease
+ 292 00f0 00000000 		.word	.LANCHOR3
+ 293 00f4 00000000 		.word	MOTOR_SpeedIncrease
+ 294 00f8 00000000 		.word	.LANCHOR2
+ 295 00fc 00000000 		.word	strlen
+ 296 0100 00000000 		.word	vTaskDelay
+ 297 0104 00000000 		.word	TEMP_GetCurrentValue
+ 298 0108 00000000 		.word	__aeabi_f2uiz
+ 299 010c 00000000 		.word	.LANCHOR1
+ 300 0110 00000000 		.word	itoa
+ 301              	.LBE8:
+ 302              	.LBE9:
+ 303              		.cfi_endproc
+ 304              	.LFE4:
+ 306              		.section	.rodata.homeworkInit.str1.4,"aMS",%progbits,1
+ 307              		.align	2
+ 308              	.LC1:
+ 309 0000 686F6D65 		.ascii	"homeworkTask\000"
+ 309      776F726B 
+ 309      5461736B 
+ 309      00
+ 310              		.section	.text.homeworkInit,"ax",%progbits
+ 311              		.align	1
+ 312              		.global	homeworkInit
+ 313              		.syntax unified
+ 314              		.thumb
+ 315              		.thumb_func
+ 316              		.fpu softvfp
+ 318              	homeworkInit:
+ 319              	.LFB5:
+ 320              		.loc 1 91 1 is_stmt 1 view -0
+ 321              		.cfi_startproc
+ 322              		@ args = 0, pretend = 0, frame = 0
+ 323              		@ frame_needed = 0, uses_anonymous_args = 0
+ 324 0000 10B5     		push	{r4, lr}
+ 325              	.LCFI2:
+ 326              		.cfi_def_cfa_offset 8
+ 327              		.cfi_offset 4, -8
+ 328              		.cfi_offset 14, -4
+ 329 0002 82B0     		sub	sp, sp, #8
+ 330              	.LCFI3:
+ 331              		.cfi_def_cfa_offset 16
+ 332              		.loc 1 92 2 view .LVU79
+ 333 0004 094B     		ldr	r3, .L24
+ 334 0006 9847     		blx	r3
+ 335              	.LVL32:
+ 336              		.loc 1 93 2 view .LVU80
+ 337 0008 094B     		ldr	r3, .L24+4
+ 338 000a 9847     		blx	r3
+ 339              	.LVL33:
+ 340              		.loc 1 94 2 view .LVU81
+ 341 000c 094B     		ldr	r3, .L24+8
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 7
+
+
+ 342 000e 9847     		blx	r3
+ 343              	.LVL34:
+ 344              		.loc 1 95 2 view .LVU82
+ 345 0010 094B     		ldr	r3, .L24+12
+ 346 0012 9847     		blx	r3
+ 347              	.LVL35:
+ 348              		.loc 1 96 2 view .LVU83
+ 349 0014 0023     		movs	r3, #0
+ 350 0016 0193     		str	r3, [sp, #4]
+ 351 0018 0522     		movs	r2, #5
+ 352 001a 0092     		str	r2, [sp]
+ 353 001c 4022     		movs	r2, #64
+ 354 001e 0749     		ldr	r1, .L24+16
+ 355 0020 0748     		ldr	r0, .L24+20
+ 356 0022 084C     		ldr	r4, .L24+24
+ 357 0024 A047     		blx	r4
+ 358              	.LVL36:
+ 359              		.loc 1 97 1 is_stmt 0 view .LVU84
+ 360 0026 02B0     		add	sp, sp, #8
+ 361              	.LCFI4:
+ 362              		.cfi_def_cfa_offset 8
+ 363              		@ sp needed
+ 364 0028 10BD     		pop	{r4, pc}
+ 365              	.L25:
+ 366 002a 00BF     		.align	2
+ 367              	.L24:
+ 368 002c 00000000 		.word	LCD_Init
+ 369 0030 00000000 		.word	UART_Init
+ 370 0034 00000000 		.word	MOTOR_Init
+ 371 0038 00000000 		.word	TEMP_Init
+ 372 003c 00000000 		.word	.LC1
+ 373 0040 00000000 		.word	homeworkTask
+ 374 0044 00000000 		.word	xTaskCreate
+ 375              		.cfi_endproc
+ 376              	.LFE5:
+ 378              		.global	fanState
+ 379              		.section	.rodata
+ 380              		.align	2
+ 381              		.set	.LANCHOR0,. + 0
+ 382              	.LC0:
+ 383 0000 54656D70 		.ascii	"Temperatura: \000"
+ 383      65726174 
+ 383      7572613A 
+ 383      2000
+ 384 000e 0000     		.space	2
+ 385              		.section	.bss.fanState,"aw",%nobits
+ 386              		.set	.LANCHOR3,. + 0
+ 389              	fanState:
+ 390 0000 00       		.space	1
+ 391              		.section	.bss.tempText,"aw",%nobits
+ 392              		.align	2
+ 393              		.set	.LANCHOR2,. + 0
+ 396              	tempText:
+ 397 0000 00000000 		.space	4
+ 398              		.section	.bss.tempValue,"aw",%nobits
+ 399              		.align	2
+ 400              		.set	.LANCHOR1,. + 0
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 8
+
+
+ 403              	tempValue:
+ 404 0000 00000000 		.space	4
+ 405              		.text
+ 406              	.Letext0:
+ 407              		.file 2 "../Core/Inc/homework.h"
+ 408              		.file 3 "../c:\\users\\david\\desktop\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\include\\machi
+ 409              		.file 4 "../c:\\users\\david\\desktop\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\include\\sys\\
+ 410              		.file 5 "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h"
+ 411              		.file 6 "../Core/Inc/driver_lcd.h"
+ 412              		.file 7 "../Core/Inc/driver_uart.h"
+ 413              		.file 8 "../Core/Inc/driver_motor.h"
+ 414              		.file 9 "../Core/Inc/driver_temp.h"
+ 415              		.file 10 "../Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 416              		.file 11 "../c:\\users\\david\\desktop\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\include\\stdl
+ 417              		.file 12 "../<built-in>"
+ARM GAS  C:\Users\David\AppData\Local\Temp\ccKY9sb2.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 homework.c
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:17     .text.homeworkTask:0000000000000000 $t
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:24     .text.homeworkTask:0000000000000000 homeworkTask
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:288    .text.homeworkTask:00000000000000e0 $d
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:307    .rodata.homeworkInit.str1.4:0000000000000000 $d
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:311    .text.homeworkInit:0000000000000000 $t
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:318    .text.homeworkInit:0000000000000000 homeworkInit
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:368    .text.homeworkInit:000000000000002c $d
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:389    .bss.fanState:0000000000000000 fanState
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:380    .rodata:0000000000000000 $d
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:390    .bss.fanState:0000000000000000 $d
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:392    .bss.tempText:0000000000000000 $d
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:396    .bss.tempText:0000000000000000 tempText
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:399    .bss.tempValue:0000000000000000 $d
+C:\Users\David\AppData\Local\Temp\ccKY9sb2.s:403    .bss.tempValue:0000000000000000 tempValue
+
+UNDEFINED SYMBOLS
+__aeabi_f2uiz
+LCD_CommandEnqueue
+UART_AsyncTransmitCharacter
+MOTOR_SpeedDecrease
+MOTOR_SpeedIncrease
+strlen
+vTaskDelay
+TEMP_GetCurrentValue
+itoa
+LCD_Init
+UART_Init
+MOTOR_Init
+TEMP_Init
+xTaskCreate

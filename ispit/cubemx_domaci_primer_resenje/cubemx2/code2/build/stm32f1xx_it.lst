@@ -1,0 +1,258 @@
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32f1xx_it.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.NMI_Handler,"ax",%progbits
+  16              		.align	1
+  17              		.global	NMI_Handler
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	NMI_Handler:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/stm32f1xx_it.c"
+   1:../Core/Src/stm32f1xx_it.c **** 
+  27              		.loc 1 73 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              		.loc 1 80 1 view .LVU1
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE65:
+  37              		.section	.text.HardFault_Handler,"ax",%progbits
+  38              		.align	1
+  39              		.global	HardFault_Handler
+  40              		.syntax unified
+  41              		.thumb
+  42              		.thumb_func
+  43              		.fpu softvfp
+  45              	HardFault_Handler:
+  46              	.LFB66:
+  47              		.loc 1 86 1 view -0
+  48              		.cfi_startproc
+  49              		@ Volatile: function does not return.
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              		@ link register save eliminated.
+  53              	.L3:
+  54              		.loc 1 90 3 discriminator 1 view .LVU3
+  55              		.loc 1 94 3 discriminator 1 view .LVU4
+  56              		.loc 1 90 9 discriminator 1 view .LVU5
+  57 0000 FEE7     		b	.L3
+  58              		.cfi_endproc
+  59              	.LFE66:
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s 			page 2
+
+
+  61              		.section	.text.MemManage_Handler,"ax",%progbits
+  62              		.align	1
+  63              		.global	MemManage_Handler
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  67              		.fpu softvfp
+  69              	MemManage_Handler:
+  70              	.LFB67:
+  71              		.loc 1 101 1 view -0
+  72              		.cfi_startproc
+  73              		@ Volatile: function does not return.
+  74              		@ args = 0, pretend = 0, frame = 0
+  75              		@ frame_needed = 0, uses_anonymous_args = 0
+  76              		@ link register save eliminated.
+  77              	.L5:
+  78              		.loc 1 105 3 discriminator 1 view .LVU7
+  79              		.loc 1 109 3 discriminator 1 view .LVU8
+  80              		.loc 1 105 9 discriminator 1 view .LVU9
+  81 0000 FEE7     		b	.L5
+  82              		.cfi_endproc
+  83              	.LFE67:
+  85              		.section	.text.BusFault_Handler,"ax",%progbits
+  86              		.align	1
+  87              		.global	BusFault_Handler
+  88              		.syntax unified
+  89              		.thumb
+  90              		.thumb_func
+  91              		.fpu softvfp
+  93              	BusFault_Handler:
+  94              	.LFB68:
+  95              		.loc 1 116 1 view -0
+  96              		.cfi_startproc
+  97              		@ Volatile: function does not return.
+  98              		@ args = 0, pretend = 0, frame = 0
+  99              		@ frame_needed = 0, uses_anonymous_args = 0
+ 100              		@ link register save eliminated.
+ 101              	.L7:
+ 102              		.loc 1 120 3 discriminator 1 view .LVU11
+ 103              		.loc 1 124 3 discriminator 1 view .LVU12
+ 104              		.loc 1 120 9 discriminator 1 view .LVU13
+ 105 0000 FEE7     		b	.L7
+ 106              		.cfi_endproc
+ 107              	.LFE68:
+ 109              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 110              		.align	1
+ 111              		.global	UsageFault_Handler
+ 112              		.syntax unified
+ 113              		.thumb
+ 114              		.thumb_func
+ 115              		.fpu softvfp
+ 117              	UsageFault_Handler:
+ 118              	.LFB69:
+ 119              		.loc 1 131 1 view -0
+ 120              		.cfi_startproc
+ 121              		@ Volatile: function does not return.
+ 122              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s 			page 3
+
+
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124              		@ link register save eliminated.
+ 125              	.L9:
+ 126              		.loc 1 135 3 discriminator 1 view .LVU15
+ 127              		.loc 1 139 3 discriminator 1 view .LVU16
+ 128              		.loc 1 135 9 discriminator 1 view .LVU17
+ 129 0000 FEE7     		b	.L9
+ 130              		.cfi_endproc
+ 131              	.LFE69:
+ 133              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 134              		.align	1
+ 135              		.global	DebugMon_Handler
+ 136              		.syntax unified
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.fpu softvfp
+ 141              	DebugMon_Handler:
+ 142              	.LFB70:
+ 143              		.loc 1 146 1 view -0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147              		@ link register save eliminated.
+ 148              		.loc 1 153 1 view .LVU19
+ 149 0000 7047     		bx	lr
+ 150              		.cfi_endproc
+ 151              	.LFE70:
+ 153              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
+ 154              		.align	1
+ 155              		.global	TIM1_UP_IRQHandler
+ 156              		.syntax unified
+ 157              		.thumb
+ 158              		.thumb_func
+ 159              		.fpu softvfp
+ 161              	TIM1_UP_IRQHandler:
+ 162              	.LFB71:
+ 163              		.loc 1 166 1 view -0
+ 164              		.cfi_startproc
+ 165              		@ args = 0, pretend = 0, frame = 0
+ 166              		@ frame_needed = 0, uses_anonymous_args = 0
+ 167 0000 08B5     		push	{r3, lr}
+ 168              	.LCFI0:
+ 169              		.cfi_def_cfa_offset 8
+ 170              		.cfi_offset 3, -8
+ 171              		.cfi_offset 14, -4
+ 172              		.loc 1 170 3 view .LVU21
+ 173 0002 0248     		ldr	r0, .L13
+ 174 0004 024B     		ldr	r3, .L13+4
+ 175 0006 9847     		blx	r3
+ 176              	.LVL0:
+ 177              		.loc 1 174 1 is_stmt 0 view .LVU22
+ 178 0008 08BD     		pop	{r3, pc}
+ 179              	.L14:
+ 180 000a 00BF     		.align	2
+ 181              	.L13:
+ 182 000c 00000000 		.word	htim1
+ 183 0010 00000000 		.word	HAL_TIM_IRQHandler
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s 			page 4
+
+
+ 184              		.cfi_endproc
+ 185              	.LFE71:
+ 187              		.section	.text.USART1_IRQHandler,"ax",%progbits
+ 188              		.align	1
+ 189              		.global	USART1_IRQHandler
+ 190              		.syntax unified
+ 191              		.thumb
+ 192              		.thumb_func
+ 193              		.fpu softvfp
+ 195              	USART1_IRQHandler:
+ 196              	.LFB72:
+ 197              		.loc 1 180 1 is_stmt 1 view -0
+ 198              		.cfi_startproc
+ 199              		@ args = 0, pretend = 0, frame = 0
+ 200              		@ frame_needed = 0, uses_anonymous_args = 0
+ 201 0000 08B5     		push	{r3, lr}
+ 202              	.LCFI1:
+ 203              		.cfi_def_cfa_offset 8
+ 204              		.cfi_offset 3, -8
+ 205              		.cfi_offset 14, -4
+ 206              		.loc 1 184 3 view .LVU24
+ 207 0002 0248     		ldr	r0, .L17
+ 208 0004 024B     		ldr	r3, .L17+4
+ 209 0006 9847     		blx	r3
+ 210              	.LVL1:
+ 211              		.loc 1 188 1 is_stmt 0 view .LVU25
+ 212 0008 08BD     		pop	{r3, pc}
+ 213              	.L18:
+ 214 000a 00BF     		.align	2
+ 215              	.L17:
+ 216 000c 00000000 		.word	huart1
+ 217 0010 00000000 		.word	HAL_UART_IRQHandler
+ 218              		.cfi_endproc
+ 219              	.LFE72:
+ 221              		.text
+ 222              	.Letext0:
+ 223              		.file 2 "../c:\\users\\marko micovic\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi
+ 224              		.file 3 "../c:\\users\\marko micovic\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi
+ 225              		.file 4 "../Drivers/CMSIS/Include/core_cm3.h"
+ 226              		.file 5 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 227              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 228              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 229              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 230              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 231              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h"
+ 232              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_it.c
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:16     .text.NMI_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:38     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:45     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:62     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:69     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:86     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:93     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:110    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:117    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:134    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:141    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:154    .text.TIM1_UP_IRQHandler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:161    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:182    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:188    .text.USART1_IRQHandler:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:195    .text.USART1_IRQHandler:0000000000000000 USART1_IRQHandler
+C:\Users\MARKOM~1\AppData\Local\Temp\ccbQrWGS.s:216    .text.USART1_IRQHandler:000000000000000c $d
+
+UNDEFINED SYMBOLS
+htim1
+HAL_TIM_IRQHandler
+huart1
+HAL_UART_IRQHandler

@@ -1,0 +1,565 @@
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"homework.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.global	__aeabi_f2uiz
+  16              		.section	.rodata.homeworkTask.str1.4,"aMS",%progbits,1
+  17              		.align	2
+  18              	.LC0:
+  19 0000 54656D70 		.ascii	"Temper: \000"
+  19      65723A20 
+  19      00
+  20 0009 000000   		.align	2
+  21              	.LC1:
+  22 000c 42727A69 		.ascii	"Brzina: \000"
+  22      6E613A20 
+  22      00
+  23              		.section	.text.homeworkTask,"ax",%progbits
+  24              		.align	1
+  25              		.arch armv7-m
+  26              		.syntax unified
+  27              		.thumb
+  28              		.thumb_func
+  29              		.fpu softvfp
+  31              	homeworkTask:
+  32              	.LVL0:
+  33              	.LFB69:
+  34              		.file 1 "../Core/Src/homework.c"
+   1:../Core/Src/homework.c **** 
+  35              		.loc 1 15 39 view -0
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 16
+  38              		@ frame_needed = 0, uses_anonymous_args = 0
+  39              		.loc 1 15 39 is_stmt 0 view .LVU1
+  40 0000 10B5     		push	{r4, lr}
+  41              	.LCFI0:
+  42              		.cfi_def_cfa_offset 8
+  43              		.cfi_offset 4, -8
+  44              		.cfi_offset 14, -4
+  45 0002 84B0     		sub	sp, sp, #16
+  46              	.LCFI1:
+  47              		.cfi_def_cfa_offset 24
+  48              		.loc 1 16 2 is_stmt 1 view .LVU2
+  49              		.loc 1 16 7 is_stmt 0 view .LVU3
+  50 0004 4F4B     		ldr	r3, .L19
+  51 0006 93E80300 		ldm	r3, {r0, r1}
+  52              	.LVL1:
+  53              		.loc 1 16 7 view .LVU4
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 2
+
+
+  54 000a 04AB     		add	r3, sp, #16
+  55 000c 03E90300 		stmdb	r3, {r0, r1}
+  56              		.loc 1 17 2 is_stmt 1 view .LVU5
+  57              		.loc 1 17 7 is_stmt 0 view .LVU6
+  58 0010 4D4A     		ldr	r2, .L19+4
+  59 0012 6B46     		mov	r3, sp
+  60 0014 92E80300 		ldm	r2, {r0, r1}
+  61 0018 83E80300 		stm	r3, {r0, r1}
+  62              		.loc 1 18 2 is_stmt 1 view .LVU7
+  63 001c 9021     		movs	r1, #144
+  64 001e 0020     		movs	r0, #0
+  65 0020 4A4B     		ldr	r3, .L19+8
+  66 0022 9847     		blx	r3
+  67              	.LVL2:
+  68              		.loc 1 20 2 view .LVU8
+  69              	.LBB2:
+  70              		.loc 1 20 6 view .LVU9
+  71              		.loc 1 20 15 is_stmt 0 view .LVU10
+  72 0024 0024     		movs	r4, #0
+  73              		.loc 1 20 2 view .LVU11
+  74 0026 07E0     		b	.L2
+  75              	.LVL3:
+  76              	.L3:
+  77              		.loc 1 21 3 is_stmt 1 discriminator 3 view .LVU12
+  78              		.loc 1 21 27 is_stmt 0 discriminator 3 view .LVU13
+  79 0028 04AB     		add	r3, sp, #16
+  80 002a 2344     		add	r3, r3, r4
+  81              		.loc 1 21 3 discriminator 3 view .LVU14
+  82 002c 13F8081C 		ldrb	r1, [r3, #-8]	@ zero_extendqisi2
+  83 0030 0120     		movs	r0, #1
+  84 0032 464B     		ldr	r3, .L19+8
+  85 0034 9847     		blx	r3
+  86              	.LVL4:
+  87              		.loc 1 20 27 is_stmt 1 discriminator 3 view .LVU15
+  88              		.loc 1 20 28 is_stmt 0 discriminator 3 view .LVU16
+  89 0036 0134     		adds	r4, r4, #1
+  90              	.LVL5:
+  91              	.L2:
+  92              		.loc 1 20 21 is_stmt 1 discriminator 1 view .LVU17
+  93              		.loc 1 20 2 is_stmt 0 discriminator 1 view .LVU18
+  94 0038 072C     		cmp	r4, #7
+  95 003a F5D9     		bls	.L3
+  96              	.LBE2:
+  97              		.loc 1 25 2 is_stmt 1 view .LVU19
+  98 003c C021     		movs	r1, #192
+  99 003e 0020     		movs	r0, #0
+ 100 0040 424B     		ldr	r3, .L19+8
+ 101 0042 9847     		blx	r3
+ 102              	.LVL6:
+ 103              		.loc 1 27 2 view .LVU20
+ 104              	.LBB3:
+ 105              		.loc 1 27 6 view .LVU21
+ 106              		.loc 1 27 15 is_stmt 0 view .LVU22
+ 107 0044 0024     		movs	r4, #0
+ 108              	.LVL7:
+ 109              		.loc 1 27 2 view .LVU23
+ 110 0046 07E0     		b	.L4
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 3
+
+
+ 111              	.LVL8:
+ 112              	.L5:
+ 113              		.loc 1 28 3 is_stmt 1 discriminator 3 view .LVU24
+ 114              		.loc 1 28 27 is_stmt 0 discriminator 3 view .LVU25
+ 115 0048 04AB     		add	r3, sp, #16
+ 116 004a 2344     		add	r3, r3, r4
+ 117              		.loc 1 28 3 discriminator 3 view .LVU26
+ 118 004c 13F8101C 		ldrb	r1, [r3, #-16]	@ zero_extendqisi2
+ 119 0050 0120     		movs	r0, #1
+ 120 0052 3E4B     		ldr	r3, .L19+8
+ 121 0054 9847     		blx	r3
+ 122              	.LVL9:
+ 123              		.loc 1 27 27 is_stmt 1 discriminator 3 view .LVU27
+ 124              		.loc 1 27 28 is_stmt 0 discriminator 3 view .LVU28
+ 125 0056 0134     		adds	r4, r4, #1
+ 126              	.LVL10:
+ 127              	.L4:
+ 128              		.loc 1 27 21 is_stmt 1 discriminator 1 view .LVU29
+ 129              		.loc 1 27 2 is_stmt 0 discriminator 1 view .LVU30
+ 130 0058 072C     		cmp	r4, #7
+ 131 005a F5D9     		bls	.L5
+ 132 005c 4BE0     		b	.L14
+ 133              	.LVL11:
+ 134              	.L18:
+ 135              		.loc 1 27 2 discriminator 1 view .LVU31
+ 136              	.LBE3:
+ 137              		.loc 1 42 3 is_stmt 1 view .LVU32
+ 138 005e 2020     		movs	r0, #32
+ 139 0060 3B4C     		ldr	r4, .L19+12
+ 140              	.LVL12:
+ 141              		.loc 1 42 3 is_stmt 0 view .LVU33
+ 142 0062 A047     		blx	r4
+ 143              	.LVL13:
+ 144              		.loc 1 43 3 is_stmt 1 view .LVU34
+ 145 0064 2F20     		movs	r0, #47
+ 146 0066 A047     		blx	r4
+ 147              	.LVL14:
+ 148              		.loc 1 44 3 view .LVU35
+ 149 0068 2020     		movs	r0, #32
+ 150 006a A047     		blx	r4
+ 151              	.LVL15:
+ 152              		.loc 1 46 3 view .LVU36
+ 153              		.loc 1 46 10 is_stmt 0 view .LVU37
+ 154 006c 394B     		ldr	r3, .L19+16
+ 155 006e 9847     		blx	r3
+ 156              	.LVL16:
+ 157              		.loc 1 46 8 view .LVU38
+ 158 0070 394B     		ldr	r3, .L19+20
+ 159 0072 9847     		blx	r3
+ 160              	.LVL17:
+ 161 0074 394C     		ldr	r4, .L19+24
+ 162 0076 2060     		str	r0, [r4]
+ 163              		.loc 1 47 3 is_stmt 1 view .LVU39
+ 164 0078 394B     		ldr	r3, .L19+28
+ 165 007a 9847     		blx	r3
+ 166              	.LVL18:
+ 167              		.loc 1 48 3 view .LVU40
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 4
+
+
+ 168 007c 0A22     		movs	r2, #10
+ 169 007e 3949     		ldr	r1, .L19+32
+ 170 0080 2068     		ldr	r0, [r4]
+ 171 0082 394B     		ldr	r3, .L19+36
+ 172 0084 9847     		blx	r3
+ 173              	.LVL19:
+ 174              		.loc 1 49 3 view .LVU41
+ 175 0086 C921     		movs	r1, #201
+ 176 0088 0020     		movs	r0, #0
+ 177 008a 304B     		ldr	r3, .L19+8
+ 178 008c 9847     		blx	r3
+ 179              	.LVL20:
+ 180              		.loc 1 52 3 view .LVU42
+ 181              	.LBB4:
+ 182              		.loc 1 52 7 view .LVU43
+ 183              		.loc 1 52 16 is_stmt 0 view .LVU44
+ 184 008e 0024     		movs	r4, #0
+ 185              	.LVL21:
+ 186              	.L8:
+ 187              		.loc 1 52 22 is_stmt 1 discriminator 1 view .LVU45
+ 188              		.loc 1 52 26 is_stmt 0 discriminator 1 view .LVU46
+ 189 0090 3448     		ldr	r0, .L19+32
+ 190 0092 364B     		ldr	r3, .L19+40
+ 191 0094 9847     		blx	r3
+ 192              	.LVL22:
+ 193              		.loc 1 52 3 discriminator 1 view .LVU47
+ 194 0096 A042     		cmp	r0, r4
+ 195 0098 06D9     		bls	.L16
+ 196              		.loc 1 53 4 is_stmt 1 discriminator 3 view .LVU48
+ 197 009a 324B     		ldr	r3, .L19+32
+ 198 009c 195D     		ldrb	r1, [r3, r4]	@ zero_extendqisi2
+ 199 009e 0120     		movs	r0, #1
+ 200 00a0 2A4B     		ldr	r3, .L19+8
+ 201 00a2 9847     		blx	r3
+ 202              	.LVL23:
+ 203              		.loc 1 52 40 discriminator 3 view .LVU49
+ 204              		.loc 1 52 41 is_stmt 0 discriminator 3 view .LVU50
+ 205 00a4 0134     		adds	r4, r4, #1
+ 206              	.LVL24:
+ 207              		.loc 1 52 41 discriminator 3 view .LVU51
+ 208 00a6 F3E7     		b	.L8
+ 209              	.L16:
+ 210              		.loc 1 52 41 discriminator 3 view .LVU52
+ 211              	.LBE4:
+ 212              		.loc 1 56 3 is_stmt 1 view .LVU53
+ 213 00a8 C820     		movs	r0, #200
+ 214 00aa 314B     		ldr	r3, .L19+44
+ 215 00ac 9847     		blx	r3
+ 216              	.LVL25:
+ 217              		.loc 1 58 3 view .LVU54
+ 218 00ae 9921     		movs	r1, #153
+ 219 00b0 0020     		movs	r0, #0
+ 220 00b2 264B     		ldr	r3, .L19+8
+ 221 00b4 9847     		blx	r3
+ 222              	.LVL26:
+ 223              		.loc 1 60 3 view .LVU55
+ 224              	.LBB5:
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 5
+
+
+ 225              		.loc 1 60 7 view .LVU56
+ 226              		.loc 1 60 16 is_stmt 0 view .LVU57
+ 227 00b6 0024     		movs	r4, #0
+ 228              	.LVL27:
+ 229              		.loc 1 60 3 view .LVU58
+ 230 00b8 07E0     		b	.L10
+ 231              	.LVL28:
+ 232              	.L11:
+ 233              		.loc 1 61 4 is_stmt 1 discriminator 3 view .LVU59
+ 234 00ba 0821     		movs	r1, #8
+ 235 00bc 0120     		movs	r0, #1
+ 236 00be 234B     		ldr	r3, .L19+8
+ 237 00c0 9847     		blx	r3
+ 238              	.LVL29:
+ 239              		.loc 1 62 4 discriminator 3 view .LVU60
+ 240 00c2 0820     		movs	r0, #8
+ 241 00c4 224B     		ldr	r3, .L19+12
+ 242 00c6 9847     		blx	r3
+ 243              	.LVL30:
+ 244              		.loc 1 60 40 discriminator 3 view .LVU61
+ 245              		.loc 1 60 41 is_stmt 0 discriminator 3 view .LVU62
+ 246 00c8 0134     		adds	r4, r4, #1
+ 247              	.LVL31:
+ 248              	.L10:
+ 249              		.loc 1 60 22 is_stmt 1 discriminator 1 view .LVU63
+ 250              		.loc 1 60 26 is_stmt 0 discriminator 1 view .LVU64
+ 251 00ca 2A48     		ldr	r0, .L19+48
+ 252 00cc 274B     		ldr	r3, .L19+40
+ 253 00ce 9847     		blx	r3
+ 254              	.LVL32:
+ 255              		.loc 1 60 3 discriminator 1 view .LVU65
+ 256 00d0 A042     		cmp	r0, r4
+ 257 00d2 F2D8     		bhi	.L11
+ 258              	.LBE5:
+ 259              		.loc 1 65 3 is_stmt 1 view .LVU66
+ 260 00d4 0820     		movs	r0, #8
+ 261 00d6 1E4C     		ldr	r4, .L19+12
+ 262              	.LVL33:
+ 263              		.loc 1 65 3 is_stmt 0 view .LVU67
+ 264 00d8 A047     		blx	r4
+ 265              	.LVL34:
+ 266              		.loc 1 66 3 is_stmt 1 view .LVU68
+ 267 00da 0820     		movs	r0, #8
+ 268 00dc A047     		blx	r4
+ 269              	.LVL35:
+ 270              		.loc 1 67 3 view .LVU69
+ 271 00de 0820     		movs	r0, #8
+ 272 00e0 A047     		blx	r4
+ 273              	.LVL36:
+ 274              		.loc 1 69 3 view .LVU70
+ 275 00e2 C921     		movs	r1, #201
+ 276 00e4 0020     		movs	r0, #0
+ 277 00e6 194B     		ldr	r3, .L19+8
+ 278 00e8 9847     		blx	r3
+ 279              	.LVL37:
+ 280              		.loc 1 71 3 view .LVU71
+ 281              	.LBB6:
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 6
+
+
+ 282              		.loc 1 71 7 view .LVU72
+ 283              		.loc 1 71 16 is_stmt 0 view .LVU73
+ 284 00ea 0024     		movs	r4, #0
+ 285              	.LVL38:
+ 286              	.L12:
+ 287              		.loc 1 71 22 is_stmt 1 discriminator 1 view .LVU74
+ 288              		.loc 1 71 26 is_stmt 0 discriminator 1 view .LVU75
+ 289 00ec 1D48     		ldr	r0, .L19+32
+ 290 00ee 1F4B     		ldr	r3, .L19+40
+ 291 00f0 9847     		blx	r3
+ 292              	.LVL39:
+ 293              		.loc 1 71 3 discriminator 1 view .LVU76
+ 294 00f2 A042     		cmp	r0, r4
+ 295 00f4 1DD8     		bhi	.L17
+ 296              	.LVL40:
+ 297              	.L14:
+ 298              		.loc 1 71 3 discriminator 1 view .LVU77
+ 299              	.LBE6:
+ 300              		.loc 1 32 2 is_stmt 1 view .LVU78
+ 301              		.loc 1 33 3 view .LVU79
+ 302              		.loc 1 33 10 is_stmt 0 view .LVU80
+ 303 00f6 204B     		ldr	r3, .L19+52
+ 304 00f8 9847     		blx	r3
+ 305              	.LVL41:
+ 306              		.loc 1 33 8 view .LVU81
+ 307 00fa 174B     		ldr	r3, .L19+20
+ 308 00fc 9847     		blx	r3
+ 309              	.LVL42:
+ 310 00fe 174C     		ldr	r4, .L19+24
+ 311 0100 2060     		str	r0, [r4]
+ 312              		.loc 1 34 3 is_stmt 1 view .LVU82
+ 313 0102 174B     		ldr	r3, .L19+28
+ 314 0104 9847     		blx	r3
+ 315              	.LVL43:
+ 316              		.loc 1 35 3 view .LVU83
+ 317 0106 0A22     		movs	r2, #10
+ 318 0108 1A49     		ldr	r1, .L19+48
+ 319 010a 2068     		ldr	r0, [r4]
+ 320 010c 164B     		ldr	r3, .L19+36
+ 321 010e 9847     		blx	r3
+ 322              	.LVL44:
+ 323              		.loc 1 36 3 view .LVU84
+ 324 0110 9921     		movs	r1, #153
+ 325 0112 0020     		movs	r0, #0
+ 326 0114 0D4B     		ldr	r3, .L19+8
+ 327 0116 9847     		blx	r3
+ 328              	.LVL45:
+ 329              		.loc 1 38 3 view .LVU85
+ 330              	.LBB7:
+ 331              		.loc 1 38 7 view .LVU86
+ 332              		.loc 1 38 16 is_stmt 0 view .LVU87
+ 333 0118 0024     		movs	r4, #0
+ 334              	.LVL46:
+ 335              	.L6:
+ 336              		.loc 1 38 22 is_stmt 1 discriminator 1 view .LVU88
+ 337              		.loc 1 38 26 is_stmt 0 discriminator 1 view .LVU89
+ 338 011a 1648     		ldr	r0, .L19+48
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 7
+
+
+ 339 011c 134B     		ldr	r3, .L19+40
+ 340 011e 9847     		blx	r3
+ 341              	.LVL47:
+ 342              		.loc 1 38 3 discriminator 1 view .LVU90
+ 343 0120 A042     		cmp	r0, r4
+ 344 0122 9CD9     		bls	.L18
+ 345              		.loc 1 39 4 is_stmt 1 discriminator 3 view .LVU91
+ 346 0124 134B     		ldr	r3, .L19+48
+ 347 0126 195D     		ldrb	r1, [r3, r4]	@ zero_extendqisi2
+ 348 0128 0120     		movs	r0, #1
+ 349 012a 084B     		ldr	r3, .L19+8
+ 350 012c 9847     		blx	r3
+ 351              	.LVL48:
+ 352              		.loc 1 38 40 discriminator 3 view .LVU92
+ 353              		.loc 1 38 41 is_stmt 0 discriminator 3 view .LVU93
+ 354 012e 0134     		adds	r4, r4, #1
+ 355              	.LVL49:
+ 356              		.loc 1 38 41 discriminator 3 view .LVU94
+ 357 0130 F3E7     		b	.L6
+ 358              	.LVL50:
+ 359              	.L17:
+ 360              		.loc 1 38 41 discriminator 3 view .LVU95
+ 361              	.LBE7:
+ 362              	.LBB8:
+ 363              		.loc 1 72 4 is_stmt 1 discriminator 3 view .LVU96
+ 364 0132 0821     		movs	r1, #8
+ 365 0134 0120     		movs	r0, #1
+ 366 0136 054B     		ldr	r3, .L19+8
+ 367 0138 9847     		blx	r3
+ 368              	.LVL51:
+ 369              		.loc 1 73 4 discriminator 3 view .LVU97
+ 370 013a 0820     		movs	r0, #8
+ 371 013c 044B     		ldr	r3, .L19+12
+ 372 013e 9847     		blx	r3
+ 373              	.LVL52:
+ 374              		.loc 1 71 40 discriminator 3 view .LVU98
+ 375              		.loc 1 71 41 is_stmt 0 discriminator 3 view .LVU99
+ 376 0140 0134     		adds	r4, r4, #1
+ 377              	.LVL53:
+ 378              		.loc 1 71 41 discriminator 3 view .LVU100
+ 379 0142 D3E7     		b	.L12
+ 380              	.L20:
+ 381              		.align	2
+ 382              	.L19:
+ 383 0144 00000000 		.word	.LC0
+ 384 0148 0C000000 		.word	.LC1
+ 385 014c 00000000 		.word	lcd_put
+ 386 0150 00000000 		.word	transmit_char
+ 387 0154 00000000 		.word	getBrzina
+ 388 0158 00000000 		.word	__aeabi_f2uiz
+ 389 015c 00000000 		.word	.LANCHOR0
+ 390 0160 00000000 		.word	transmit_digit
+ 391 0164 00000000 		.word	.LANCHOR2
+ 392 0168 00000000 		.word	itoa
+ 393 016c 00000000 		.word	strlen
+ 394 0170 00000000 		.word	vTaskDelay
+ 395 0174 00000000 		.word	.LANCHOR1
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 8
+
+
+ 396 0178 00000000 		.word	getTemp
+ 397              	.LBE8:
+ 398              		.cfi_endproc
+ 399              	.LFE69:
+ 401              		.section	.rodata.init.str1.4,"aMS",%progbits,1
+ 402              		.align	2
+ 403              	.LC2:
+ 404 0000 686F6D65 		.ascii	"homeworkTask\000"
+ 404      776F726B 
+ 404      5461736B 
+ 404      00
+ 405              		.section	.text.init,"ax",%progbits
+ 406              		.align	1
+ 407              		.global	init
+ 408              		.syntax unified
+ 409              		.thumb
+ 410              		.thumb_func
+ 411              		.fpu softvfp
+ 413              	init:
+ 414              	.LFB70:
+ 415              		.loc 1 79 12 is_stmt 1 view -0
+ 416              		.cfi_startproc
+ 417              		@ args = 0, pretend = 0, frame = 0
+ 418              		@ frame_needed = 0, uses_anonymous_args = 0
+ 419 0000 10B5     		push	{r4, lr}
+ 420              	.LCFI2:
+ 421              		.cfi_def_cfa_offset 8
+ 422              		.cfi_offset 4, -8
+ 423              		.cfi_offset 14, -4
+ 424 0002 82B0     		sub	sp, sp, #8
+ 425              	.LCFI3:
+ 426              		.cfi_def_cfa_offset 16
+ 427              		.loc 1 80 2 view .LVU102
+ 428 0004 094B     		ldr	r3, .L23
+ 429 0006 9847     		blx	r3
+ 430              	.LVL54:
+ 431              		.loc 1 81 2 view .LVU103
+ 432 0008 094B     		ldr	r3, .L23+4
+ 433 000a 9847     		blx	r3
+ 434              	.LVL55:
+ 435              		.loc 1 82 2 view .LVU104
+ 436 000c 094B     		ldr	r3, .L23+8
+ 437 000e 9847     		blx	r3
+ 438              	.LVL56:
+ 439              		.loc 1 83 2 view .LVU105
+ 440 0010 094B     		ldr	r3, .L23+12
+ 441 0012 9847     		blx	r3
+ 442              	.LVL57:
+ 443              		.loc 1 84 2 view .LVU106
+ 444 0014 0023     		movs	r3, #0
+ 445 0016 0193     		str	r3, [sp, #4]
+ 446 0018 0522     		movs	r2, #5
+ 447 001a 0092     		str	r2, [sp]
+ 448 001c 4022     		movs	r2, #64
+ 449 001e 0749     		ldr	r1, .L23+16
+ 450 0020 0748     		ldr	r0, .L23+20
+ 451 0022 084C     		ldr	r4, .L23+24
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 9
+
+
+ 452 0024 A047     		blx	r4
+ 453              	.LVL58:
+ 454              		.loc 1 85 1 is_stmt 0 view .LVU107
+ 455 0026 02B0     		add	sp, sp, #8
+ 456              	.LCFI4:
+ 457              		.cfi_def_cfa_offset 8
+ 458              		@ sp needed
+ 459 0028 10BD     		pop	{r4, pc}
+ 460              	.L24:
+ 461 002a 00BF     		.align	2
+ 462              	.L23:
+ 463 002c 00000000 		.word	lcd_init
+ 464 0030 00000000 		.word	initTemp
+ 465 0034 00000000 		.word	brzina_init
+ 466 0038 00000000 		.word	led_init
+ 467 003c 00000000 		.word	.LC2
+ 468 0040 00000000 		.word	homeworkTask
+ 469 0044 00000000 		.word	xTaskCreate
+ 470              		.cfi_endproc
+ 471              	.LFE70:
+ 473              		.section	.bss.broj,"aw",%nobits
+ 474              		.align	2
+ 475              		.set	.LANCHOR0,. + 0
+ 478              	broj:
+ 479 0000 00000000 		.space	4
+ 480              		.section	.bss.text1,"aw",%nobits
+ 481              		.align	2
+ 482              		.set	.LANCHOR1,. + 0
+ 485              	text1:
+ 486 0000 00000000 		.space	4
+ 487              		.section	.bss.text2,"aw",%nobits
+ 488              		.align	2
+ 489              		.set	.LANCHOR2,. + 0
+ 492              	text2:
+ 493 0000 00000000 		.space	4
+ 494              		.text
+ 495              	.Letext0:
+ 496              		.file 2 "../d:\\faks\\4. godina\\7.semestar\\mips\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 497              		.file 3 "../d:\\faks\\4. godina\\7.semestar\\mips\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 498              		.file 4 "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h"
+ 499              		.file 5 "../Core/Inc/driver_lcd.h"
+ 500              		.file 6 "../Core/Inc/driver_temp.h"
+ 501              		.file 7 "../Core/Inc/driver_brzina.h"
+ 502              		.file 8 "../Core/Inc/driver_led.h"
+ 503              		.file 9 "../Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 504              		.file 10 "../d:\\faks\\4. godina\\7.semestar\\mips\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-non
+ 505              		.file 11 "../<built-in>"
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 homework.c
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:17     .rodata.homeworkTask.str1.4:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:24     .text.homeworkTask:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:31     .text.homeworkTask:0000000000000000 homeworkTask
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:383    .text.homeworkTask:0000000000000144 $d
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:402    .rodata.init.str1.4:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:406    .text.init:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:413    .text.init:0000000000000000 init
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:463    .text.init:000000000000002c $d
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:474    .bss.broj:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:478    .bss.broj:0000000000000000 broj
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:481    .bss.text1:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:485    .bss.text1:0000000000000000 text1
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:488    .bss.text2:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\cc1tlntP.s:492    .bss.text2:0000000000000000 text2
+
+UNDEFINED SYMBOLS
+__aeabi_f2uiz
+lcd_put
+transmit_char
+getBrzina
+transmit_digit
+itoa
+strlen
+vTaskDelay
+getTemp
+lcd_init
+initTemp
+brzina_init
+led_init
+xTaskCreate

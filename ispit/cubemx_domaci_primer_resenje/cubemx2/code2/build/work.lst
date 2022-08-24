@@ -1,0 +1,319 @@
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"work.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.workTask,"ax",%progbits
+  16              		.align	1
+  17              		.arch armv7-m
+  18              		.syntax unified
+  19              		.thumb
+  20              		.thumb_func
+  21              		.fpu softvfp
+  23              	workTask:
+  24              	.LVL0:
+  25              	.LFB69:
+  26              		.file 1 "../Core/Src/work.c"
+   1:../Core/Src/work.c **** 
+  27              		.loc 1 19 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 8
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		.loc 1 19 1 is_stmt 0 view .LVU1
+  32 0000 30B5     		push	{r4, r5, lr}
+  33              	.LCFI0:
+  34              		.cfi_def_cfa_offset 12
+  35              		.cfi_offset 4, -12
+  36              		.cfi_offset 5, -8
+  37              		.cfi_offset 14, -4
+  38 0002 83B0     		sub	sp, sp, #12
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 24
+  41              		.loc 1 20 2 is_stmt 1 view .LVU2
+  42 0004 4821     		movs	r1, #72
+  43 0006 0020     		movs	r0, #0
+  44              	.LVL1:
+  45              		.loc 1 20 2 is_stmt 0 view .LVU3
+  46 0008 284C     		ldr	r4, .L11
+  47 000a A047     		blx	r4
+  48              	.LVL2:
+  49              		.loc 1 23 2 is_stmt 1 view .LVU4
+  50 000c 1F21     		movs	r1, #31
+  51 000e 0120     		movs	r0, #1
+  52 0010 A047     		blx	r4
+  53              	.LVL3:
+  54              		.loc 1 24 2 view .LVU5
+  55 0012 1F21     		movs	r1, #31
+  56 0014 0120     		movs	r0, #1
+  57 0016 A047     		blx	r4
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s 			page 2
+
+
+  58              	.LVL4:
+  59              		.loc 1 25 2 view .LVU6
+  60 0018 1F21     		movs	r1, #31
+  61 001a 0120     		movs	r0, #1
+  62 001c A047     		blx	r4
+  63              	.LVL5:
+  64              		.loc 1 26 2 view .LVU7
+  65 001e 1F21     		movs	r1, #31
+  66 0020 0120     		movs	r0, #1
+  67 0022 A047     		blx	r4
+  68              	.LVL6:
+  69              		.loc 1 27 2 view .LVU8
+  70 0024 1F21     		movs	r1, #31
+  71 0026 0120     		movs	r0, #1
+  72 0028 A047     		blx	r4
+  73              	.LVL7:
+  74              		.loc 1 28 2 view .LVU9
+  75 002a 1F21     		movs	r1, #31
+  76 002c 0120     		movs	r0, #1
+  77 002e A047     		blx	r4
+  78              	.LVL8:
+  79              		.loc 1 29 2 view .LVU10
+  80 0030 1F21     		movs	r1, #31
+  81 0032 0120     		movs	r0, #1
+  82 0034 A047     		blx	r4
+  83              	.LVL9:
+  84              		.loc 1 31 2 view .LVU11
+  85 0036 1E4C     		ldr	r4, .L11+4
+  86 0038 0021     		movs	r1, #0
+  87 003a 2046     		mov	r0, r4
+  88 003c 1D4D     		ldr	r5, .L11+8
+  89 003e A847     		blx	r5
+  90              	.LVL10:
+  91              		.loc 1 32 2 view .LVU12
+  92 0040 0421     		movs	r1, #4
+  93 0042 2046     		mov	r0, r4
+  94 0044 A847     		blx	r5
+  95              	.LVL11:
+  96              		.loc 1 34 2 view .LVU13
+  97              		.loc 1 34 7 is_stmt 0 view .LVU14
+  98 0046 2368     		ldr	r3, [r4]
+  99              		.loc 1 34 23 view .LVU15
+ 100 0048 0022     		movs	r2, #0
+ 101 004a 5A63     		str	r2, [r3, #52]
+ 102              		.loc 1 35 2 is_stmt 1 view .LVU16
+ 103              		.loc 1 35 23 is_stmt 0 view .LVU17
+ 104 004c 9A63     		str	r2, [r3, #56]
+ 105              	.L9:
+ 106              		.loc 1 37 2 is_stmt 1 view .LVU18
+ 107              	.LBB2:
+ 108              		.loc 1 39 3 view .LVU19
+ 109              		.loc 1 39 31 is_stmt 0 view .LVU20
+ 110 004e 1A4B     		ldr	r3, .L11+12
+ 111 0050 9847     		blx	r3
+ 112              	.LVL12:
+ 113 0052 ADF80400 		strh	r0, [sp, #4]	@ movhi
+ 114              		.loc 1 40 3 is_stmt 1 view .LVU21
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s 			page 3
+
+
+ 115              		.loc 1 40 23 is_stmt 0 view .LVU22
+ 116 0056 C3B2     		uxtb	r3, r0
+ 117              		.loc 1 40 3 view .LVU23
+ 118 0058 012B     		cmp	r3, #1
+ 119 005a 03D0     		beq	.L2
+ 120 005c 022B     		cmp	r3, #2
+ 121 005e 0BD0     		beq	.L3
+ 122              	.L4:
+ 123              	.LBE2:
+ 124              		.loc 1 19 1 discriminator 1 view .LVU24
+ 125 0060 0024     		movs	r4, #0
+ 126 0062 18E0     		b	.L7
+ 127              	.L2:
+ 128              	.LBB4:
+ 129              		.loc 1 43 4 is_stmt 1 view .LVU25
+ 130              		.loc 1 43 9 is_stmt 0 view .LVU26
+ 131 0064 124B     		ldr	r3, .L11+4
+ 132 0066 1B68     		ldr	r3, [r3]
+ 133              		.loc 1 43 39 view .LVU27
+ 134 0068 9DF80520 		ldrb	r2, [sp, #5]	@ zero_extendqisi2
+ 135              		.loc 1 43 25 view .LVU28
+ 136 006c 5A63     		str	r2, [r3, #52]
+ 137              		.loc 1 44 4 is_stmt 1 view .LVU29
+ 138 006e 8021     		movs	r1, #128
+ 139 0070 0020     		movs	r0, #0
+ 140 0072 0E4B     		ldr	r3, .L11
+ 141 0074 9847     		blx	r3
+ 142              	.LVL13:
+ 143              		.loc 1 46 4 view .LVU30
+ 144 0076 F3E7     		b	.L4
+ 145              	.L3:
+ 146              		.loc 1 48 4 view .LVU31
+ 147              		.loc 1 48 9 is_stmt 0 view .LVU32
+ 148 0078 0D4B     		ldr	r3, .L11+4
+ 149 007a 1B68     		ldr	r3, [r3]
+ 150              		.loc 1 48 39 view .LVU33
+ 151 007c 9DF80520 		ldrb	r2, [sp, #5]	@ zero_extendqisi2
+ 152              		.loc 1 48 25 view .LVU34
+ 153 0080 9A63     		str	r2, [r3, #56]
+ 154              		.loc 1 49 4 is_stmt 1 view .LVU35
+ 155 0082 C021     		movs	r1, #192
+ 156 0084 0020     		movs	r0, #0
+ 157 0086 094B     		ldr	r3, .L11
+ 158 0088 9847     		blx	r3
+ 159              	.LVL14:
+ 160              		.loc 1 51 4 view .LVU36
+ 161 008a E9E7     		b	.L4
+ 162              	.LVL15:
+ 163              	.L5:
+ 164              	.LBB3:
+ 165              		.loc 1 62 5 view .LVU37
+ 166 008c 2021     		movs	r1, #32
+ 167 008e 0120     		movs	r0, #1
+ 168 0090 064B     		ldr	r3, .L11
+ 169 0092 9847     		blx	r3
+ 170              	.LVL16:
+ 171              	.L6:
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s 			page 4
+
+
+ 172              		.loc 1 54 32 discriminator 2 view .LVU38
+ 173              		.loc 1 54 33 is_stmt 0 discriminator 2 view .LVU39
+ 174 0094 0134     		adds	r4, r4, #1
+ 175              	.LVL17:
+ 176              	.L7:
+ 177              		.loc 1 54 24 is_stmt 1 discriminator 1 view .LVU40
+ 178              		.loc 1 54 3 is_stmt 0 discriminator 1 view .LVU41
+ 179 0096 0F2C     		cmp	r4, #15
+ 180 0098 D9D8     		bhi	.L9
+ 181              		.loc 1 56 4 is_stmt 1 view .LVU42
+ 182              		.loc 1 56 24 is_stmt 0 view .LVU43
+ 183 009a 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2
+ 184              		.loc 1 56 7 view .LVU44
+ 185 009e A342     		cmp	r3, r4
+ 186 00a0 F4D9     		bls	.L5
+ 187              		.loc 1 58 5 is_stmt 1 view .LVU45
+ 188 00a2 0121     		movs	r1, #1
+ 189 00a4 0846     		mov	r0, r1
+ 190 00a6 014B     		ldr	r3, .L11
+ 191 00a8 9847     		blx	r3
+ 192              	.LVL18:
+ 193 00aa F3E7     		b	.L6
+ 194              	.L12:
+ 195              		.align	2
+ 196              	.L11:
+ 197 00ac 00000000 		.word	LCD_CommandEnqueue
+ 198 00b0 00000000 		.word	htim3
+ 199 00b4 00000000 		.word	HAL_TIM_PWM_Start
+ 200 00b8 00000000 		.word	UART_BlockReceiveMotorCommand
+ 201              	.LBE3:
+ 202              	.LBE4:
+ 203              		.cfi_endproc
+ 204              	.LFE69:
+ 206              		.section	.rodata.workInit.str1.4,"aMS",%progbits,1
+ 207              		.align	2
+ 208              	.LC0:
+ 209 0000 776F726B 		.ascii	"workTask\000"
+ 209      5461736B 
+ 209      00
+ 210              		.section	.text.workInit,"ax",%progbits
+ 211              		.align	1
+ 212              		.global	workInit
+ 213              		.syntax unified
+ 214              		.thumb
+ 215              		.thumb_func
+ 216              		.fpu softvfp
+ 218              	workInit:
+ 219              	.LFB70:
+ 220              		.loc 1 69 1 view -0
+ 221              		.cfi_startproc
+ 222              		@ args = 0, pretend = 0, frame = 0
+ 223              		@ frame_needed = 0, uses_anonymous_args = 0
+ 224 0000 10B5     		push	{r4, lr}
+ 225              	.LCFI2:
+ 226              		.cfi_def_cfa_offset 8
+ 227              		.cfi_offset 4, -8
+ 228              		.cfi_offset 14, -4
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s 			page 5
+
+
+ 229 0002 82B0     		sub	sp, sp, #8
+ 230              	.LCFI3:
+ 231              		.cfi_def_cfa_offset 16
+ 232              		.loc 1 70 2 view .LVU47
+ 233 0004 074B     		ldr	r3, .L15
+ 234 0006 9847     		blx	r3
+ 235              	.LVL19:
+ 236              		.loc 1 71 2 view .LVU48
+ 237 0008 074B     		ldr	r3, .L15+4
+ 238 000a 9847     		blx	r3
+ 239              	.LVL20:
+ 240              		.loc 1 72 2 view .LVU49
+ 241 000c 0023     		movs	r3, #0
+ 242 000e 0193     		str	r3, [sp, #4]
+ 243 0010 0522     		movs	r2, #5
+ 244 0012 0092     		str	r2, [sp]
+ 245 0014 8022     		movs	r2, #128
+ 246 0016 0549     		ldr	r1, .L15+8
+ 247 0018 0548     		ldr	r0, .L15+12
+ 248 001a 064C     		ldr	r4, .L15+16
+ 249 001c A047     		blx	r4
+ 250              	.LVL21:
+ 251              		.loc 1 73 1 is_stmt 0 view .LVU50
+ 252 001e 02B0     		add	sp, sp, #8
+ 253              	.LCFI4:
+ 254              		.cfi_def_cfa_offset 8
+ 255              		@ sp needed
+ 256 0020 10BD     		pop	{r4, pc}
+ 257              	.L16:
+ 258 0022 00BF     		.align	2
+ 259              	.L15:
+ 260 0024 00000000 		.word	UART_Init
+ 261 0028 00000000 		.word	LCD_Init
+ 262 002c 00000000 		.word	.LC0
+ 263 0030 00000000 		.word	workTask
+ 264 0034 00000000 		.word	xTaskCreate
+ 265              		.cfi_endproc
+ 266              	.LFE70:
+ 268              		.text
+ 269              	.Letext0:
+ 270              		.file 2 "../c:\\users\\marko micovic\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi
+ 271              		.file 3 "../c:\\users\\marko micovic\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi
+ 272              		.file 4 "../Core/Inc/work.h"
+ 273              		.file 5 "../Core/Inc/FreeRTOSConfig.h"
+ 274              		.file 6 "../Drivers/CMSIS/Include/core_cm3.h"
+ 275              		.file 7 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 276              		.file 8 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 277              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 278              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 279              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 280              		.file 12 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 281              		.file 13 "../Core/Inc/tim.h"
+ 282              		.file 14 "../Core/Inc/lcd.h"
+ 283              		.file 15 "../Core/Inc/uart_driver.h"
+ 284              		.file 16 "../Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 work.c
+C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s:16     .text.workTask:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s:23     .text.workTask:0000000000000000 workTask
+C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s:197    .text.workTask:00000000000000ac $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s:207    .rodata.workInit.str1.4:0000000000000000 $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s:211    .text.workInit:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s:218    .text.workInit:0000000000000000 workInit
+C:\Users\MARKOM~1\AppData\Local\Temp\ccvIh09M.s:260    .text.workInit:0000000000000024 $d
+
+UNDEFINED SYMBOLS
+LCD_CommandEnqueue
+htim3
+HAL_TIM_PWM_Start
+UART_BlockReceiveMotorCommand
+UART_Init
+LCD_Init
+xTaskCreate

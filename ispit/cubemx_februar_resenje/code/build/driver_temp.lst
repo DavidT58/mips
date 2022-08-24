@@ -1,0 +1,344 @@
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"driver_temp.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.global	__aeabi_ui2f
+  16              		.global	__aeabi_fmul
+  17              		.section	.text.tempTask,"ax",%progbits
+  18              		.align	1
+  19              		.arch armv7-m
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  23              		.fpu softvfp
+  25              	tempTask:
+  26              	.LFB71:
+  27              		.file 1 "../Core/Src/driver_temp.c"
+   1:../Core/Src/driver_temp.c **** 
+  28              		.loc 1 23 35 view -0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 8
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              	.LVL0:
+  34              		.loc 1 23 35 is_stmt 0 view .LVU1
+  35 0000 00B5     		push	{lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 4
+  38              		.cfi_offset 14, -4
+  39 0002 83B0     		sub	sp, sp, #12
+  40              	.LCFI1:
+  41              		.cfi_def_cfa_offset 16
+  42              	.LVL1:
+  43              	.L2:
+  44              		.loc 1 24 2 is_stmt 1 discriminator 1 view .LVU2
+  45              	.LBB2:
+  46              		.loc 1 25 3 discriminator 1 view .LVU3
+  47 0004 104C     		ldr	r4, .L4
+  48 0006 2046     		mov	r0, r4
+  49 0008 104B     		ldr	r3, .L4+4
+  50 000a 9847     		blx	r3
+  51              	.LVL2:
+  52              		.loc 1 26 3 discriminator 1 view .LVU4
+  53 000c 4FF0FF31 		mov	r1, #-1
+  54 0010 0120     		movs	r0, #1
+  55 0012 0F4B     		ldr	r3, .L4+8
+  56 0014 9847     		blx	r3
+  57              	.LVL3:
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s 			page 2
+
+
+  58              		.loc 1 27 3 discriminator 1 view .LVU5
+  59              		.loc 1 27 19 is_stmt 0 discriminator 1 view .LVU6
+  60 0016 2046     		mov	r0, r4
+  61 0018 0E4B     		ldr	r3, .L4+12
+  62 001a 9847     		blx	r3
+  63              	.LVL4:
+  64              		.loc 1 27 9 discriminator 1 view .LVU7
+  65 001c 0E4B     		ldr	r3, .L4+16
+  66 001e 9847     		blx	r3
+  67              	.LVL5:
+  68 0020 0190     		str	r0, [sp, #4]	@ float
+  69              		.loc 1 28 3 is_stmt 1 discriminator 1 view .LVU8
+  70              		.loc 1 28 11 is_stmt 0 discriminator 1 view .LVU9
+  71 0022 0E4C     		ldr	r4, .L4+20
+  72 0024 0E49     		ldr	r1, .L4+24
+  73 0026 A047     		blx	r4
+  74              	.LVL6:
+  75 0028 0190     		str	r0, [sp, #4]	@ float
+  76              		.loc 1 29 3 is_stmt 1 discriminator 1 view .LVU10
+  77              		.loc 1 29 11 is_stmt 0 discriminator 1 view .LVU11
+  78 002a 0E49     		ldr	r1, .L4+28
+  79 002c A047     		blx	r4
+  80              	.LVL7:
+  81 002e 0190     		str	r0, [sp, #4]	@ float
+  82              		.loc 1 30 3 is_stmt 1 discriminator 1 view .LVU12
+  83 0030 0223     		movs	r3, #2
+  84 0032 0022     		movs	r2, #0
+  85 0034 01A9     		add	r1, sp, #4
+  86 0036 0C48     		ldr	r0, .L4+32
+  87 0038 0068     		ldr	r0, [r0]
+  88 003a 0C4C     		ldr	r4, .L4+36
+  89 003c A047     		blx	r4
+  90              	.LVL8:
+  91              		.loc 1 31 3 discriminator 1 view .LVU13
+  92 003e C820     		movs	r0, #200
+  93 0040 0B4B     		ldr	r3, .L4+40
+  94 0042 9847     		blx	r3
+  95              	.LVL9:
+  96              	.LBE2:
+  97              		.loc 1 24 7 discriminator 1 view .LVU14
+  98 0044 DEE7     		b	.L2
+  99              	.L5:
+ 100 0046 00BF     		.align	2
+ 101              	.L4:
+ 102 0048 00000000 		.word	hadc1
+ 103 004c 00000000 		.word	HAL_ADC_Start_IT
+ 104 0050 00000000 		.word	ulTaskNotifyTake
+ 105 0054 00000000 		.word	HAL_ADC_GetValue
+ 106 0058 00000000 		.word	__aeabi_ui2f
+ 107 005c 00000000 		.word	__aeabi_fmul
+ 108 0060 0000A03A 		.word	983564288
+ 109 0064 0000C842 		.word	1120403456
+ 110 0068 00000000 		.word	.LANCHOR0
+ 111 006c 00000000 		.word	xQueueGenericSend
+ 112 0070 00000000 		.word	vTaskDelay
+ 113              		.cfi_endproc
+ 114              	.LFE71:
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s 			page 3
+
+
+ 116              		.section	.text.getTemp,"ax",%progbits
+ 117              		.align	1
+ 118              		.global	getTemp
+ 119              		.syntax unified
+ 120              		.thumb
+ 121              		.thumb_func
+ 122              		.fpu softvfp
+ 124              	getTemp:
+ 125              	.LFB69:
+ 126              		.loc 1 10 16 view -0
+ 127              		.cfi_startproc
+ 128              		@ args = 0, pretend = 0, frame = 8
+ 129              		@ frame_needed = 0, uses_anonymous_args = 0
+ 130 0000 00B5     		push	{lr}
+ 131              	.LCFI2:
+ 132              		.cfi_def_cfa_offset 4
+ 133              		.cfi_offset 14, -4
+ 134 0002 83B0     		sub	sp, sp, #12
+ 135              	.LCFI3:
+ 136              		.cfi_def_cfa_offset 16
+ 137              		.loc 1 11 2 view .LVU16
+ 138              		.loc 1 12 2 view .LVU17
+ 139 0004 4FF0FF32 		mov	r2, #-1
+ 140 0008 01A9     		add	r1, sp, #4
+ 141 000a 044B     		ldr	r3, .L8
+ 142 000c 1868     		ldr	r0, [r3]
+ 143 000e 044B     		ldr	r3, .L8+4
+ 144 0010 9847     		blx	r3
+ 145              	.LVL10:
+ 146              		.loc 1 13 2 view .LVU18
+ 147              		.loc 1 14 1 is_stmt 0 view .LVU19
+ 148 0012 0198     		ldr	r0, [sp, #4]	@ float
+ 149 0014 03B0     		add	sp, sp, #12
+ 150              	.LCFI4:
+ 151              		.cfi_def_cfa_offset 4
+ 152              		@ sp needed
+ 153 0016 5DF804FB 		ldr	pc, [sp], #4
+ 154              	.L9:
+ 155 001a 00BF     		.align	2
+ 156              	.L8:
+ 157 001c 00000000 		.word	.LANCHOR0
+ 158 0020 00000000 		.word	xQueuePeek
+ 159              		.cfi_endproc
+ 160              	.LFE69:
+ 162              		.section	.text.HAL_ADC_ConvCpltCallback,"ax",%progbits
+ 163              		.align	1
+ 164              		.global	HAL_ADC_ConvCpltCallback
+ 165              		.syntax unified
+ 166              		.thumb
+ 167              		.thumb_func
+ 168              		.fpu softvfp
+ 170              	HAL_ADC_ConvCpltCallback:
+ 171              	.LVL11:
+ 172              	.LFB70:
+ 173              		.loc 1 17 1 is_stmt 1 view -0
+ 174              		.cfi_startproc
+ 175              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s 			page 4
+
+
+ 176              		@ frame_needed = 0, uses_anonymous_args = 0
+ 177              		.loc 1 17 1 is_stmt 0 view .LVU21
+ 178 0000 08B5     		push	{r3, lr}
+ 179              	.LCFI5:
+ 180              		.cfi_def_cfa_offset 8
+ 181              		.cfi_offset 3, -8
+ 182              		.cfi_offset 14, -4
+ 183              		.loc 1 18 2 is_stmt 1 view .LVU22
+ 184              	.LVL12:
+ 185              		.loc 1 19 2 view .LVU23
+ 186 0002 0021     		movs	r1, #0
+ 187 0004 024B     		ldr	r3, .L12
+ 188 0006 1868     		ldr	r0, [r3]
+ 189              	.LVL13:
+ 190              		.loc 1 19 2 is_stmt 0 view .LVU24
+ 191 0008 024B     		ldr	r3, .L12+4
+ 192 000a 9847     		blx	r3
+ 193              	.LVL14:
+ 194              		.loc 1 20 2 is_stmt 1 view .LVU25
+ 195              		.loc 1 20 27 view .LVU26
+ 196              		.loc 1 21 1 is_stmt 0 view .LVU27
+ 197 000c 08BD     		pop	{r3, pc}
+ 198              	.L13:
+ 199 000e 00BF     		.align	2
+ 200              	.L12:
+ 201 0010 00000000 		.word	.LANCHOR1
+ 202 0014 00000000 		.word	vTaskNotifyGiveFromISR
+ 203              		.cfi_endproc
+ 204              	.LFE70:
+ 206              		.section	.rodata.initTemp.str1.4,"aMS",%progbits,1
+ 207              		.align	2
+ 208              	.LC0:
+ 209 0000 74656D70 		.ascii	"tempTask\000"
+ 209      5461736B 
+ 209      00
+ 210              		.section	.text.initTemp,"ax",%progbits
+ 211              		.align	1
+ 212              		.global	initTemp
+ 213              		.syntax unified
+ 214              		.thumb
+ 215              		.thumb_func
+ 216              		.fpu softvfp
+ 218              	initTemp:
+ 219              	.LFB72:
+ 220              		.loc 1 36 16 is_stmt 1 view -0
+ 221              		.cfi_startproc
+ 222              		@ args = 0, pretend = 0, frame = 0
+ 223              		@ frame_needed = 0, uses_anonymous_args = 0
+ 224 0000 10B5     		push	{r4, lr}
+ 225              	.LCFI6:
+ 226              		.cfi_def_cfa_offset 8
+ 227              		.cfi_offset 4, -8
+ 228              		.cfi_offset 14, -4
+ 229 0002 82B0     		sub	sp, sp, #8
+ 230              	.LCFI7:
+ 231              		.cfi_def_cfa_offset 16
+ 232              		.loc 1 37 2 view .LVU29
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s 			page 5
+
+
+ 233              		.loc 1 37 12 is_stmt 0 view .LVU30
+ 234 0004 0022     		movs	r2, #0
+ 235 0006 0421     		movs	r1, #4
+ 236 0008 0120     		movs	r0, #1
+ 237 000a 084B     		ldr	r3, .L16
+ 238 000c 9847     		blx	r3
+ 239              	.LVL15:
+ 240              		.loc 1 37 10 view .LVU31
+ 241 000e 084B     		ldr	r3, .L16+4
+ 242 0010 1860     		str	r0, [r3]
+ 243              		.loc 1 38 2 is_stmt 1 view .LVU32
+ 244 0012 084B     		ldr	r3, .L16+8
+ 245 0014 0193     		str	r3, [sp, #4]
+ 246 0016 0223     		movs	r3, #2
+ 247 0018 0093     		str	r3, [sp]
+ 248 001a 0023     		movs	r3, #0
+ 249 001c 4022     		movs	r2, #64
+ 250 001e 0649     		ldr	r1, .L16+12
+ 251 0020 0648     		ldr	r0, .L16+16
+ 252 0022 074C     		ldr	r4, .L16+20
+ 253 0024 A047     		blx	r4
+ 254              	.LVL16:
+ 255              		.loc 1 39 1 is_stmt 0 view .LVU33
+ 256 0026 02B0     		add	sp, sp, #8
+ 257              	.LCFI8:
+ 258              		.cfi_def_cfa_offset 8
+ 259              		@ sp needed
+ 260 0028 10BD     		pop	{r4, pc}
+ 261              	.L17:
+ 262 002a 00BF     		.align	2
+ 263              	.L16:
+ 264 002c 00000000 		.word	xQueueGenericCreate
+ 265 0030 00000000 		.word	.LANCHOR0
+ 266 0034 00000000 		.word	.LANCHOR1
+ 267 0038 00000000 		.word	.LC0
+ 268 003c 00000000 		.word	tempTask
+ 269 0040 00000000 		.word	xTaskCreate
+ 270              		.cfi_endproc
+ 271              	.LFE72:
+ 273              		.section	.bss.mailBox,"aw",%nobits
+ 274              		.align	2
+ 275              		.set	.LANCHOR0,. + 0
+ 278              	mailBox:
+ 279 0000 00000000 		.space	4
+ 280              		.section	.bss.tempTaskHandle,"aw",%nobits
+ 281              		.align	2
+ 282              		.set	.LANCHOR1,. + 0
+ 285              	tempTaskHandle:
+ 286 0000 00000000 		.space	4
+ 287              		.text
+ 288              	.Letext0:
+ 289              		.file 2 "../d:\\faks\\4. godina\\7.semestar\\mips\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 290              		.file 3 "../d:\\faks\\4. godina\\7.semestar\\mips\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none
+ 291              		.file 4 "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h"
+ 292              		.file 5 "../Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 293              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 294              		.file 7 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s 			page 6
+
+
+ 295              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 296              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 297              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h"
+ 298              		.file 11 "../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h"
+ 299              		.file 12 "../Core/Inc/adc.h"
+ARM GAS  C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 driver_temp.c
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:18     .text.tempTask:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:25     .text.tempTask:0000000000000000 tempTask
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:102    .text.tempTask:0000000000000048 $d
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:117    .text.getTemp:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:124    .text.getTemp:0000000000000000 getTemp
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:157    .text.getTemp:000000000000001c $d
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:163    .text.HAL_ADC_ConvCpltCallback:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:170    .text.HAL_ADC_ConvCpltCallback:0000000000000000 HAL_ADC_ConvCpltCallback
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:201    .text.HAL_ADC_ConvCpltCallback:0000000000000010 $d
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:207    .rodata.initTemp.str1.4:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:211    .text.initTemp:0000000000000000 $t
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:218    .text.initTemp:0000000000000000 initTemp
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:264    .text.initTemp:000000000000002c $d
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:274    .bss.mailBox:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:278    .bss.mailBox:0000000000000000 mailBox
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:281    .bss.tempTaskHandle:0000000000000000 $d
+C:\Users\Nikola\AppData\Local\Temp\ccU9XKVp.s:285    .bss.tempTaskHandle:0000000000000000 tempTaskHandle
+
+UNDEFINED SYMBOLS
+__aeabi_ui2f
+__aeabi_fmul
+hadc1
+HAL_ADC_Start_IT
+ulTaskNotifyTake
+HAL_ADC_GetValue
+xQueueGenericSend
+vTaskDelay
+xQueuePeek
+vTaskNotifyGiveFromISR
+xQueueGenericCreate
+xTaskCreate

@@ -1,0 +1,124 @@
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"freertos.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	MX_FREERTOS_Init
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	MX_FREERTOS_Init:
+  25              	.LFB69:
+  26              		.file 1 "../Core/Src/freertos.c"
+   1:../Core/Src/freertos.c **** 
+  27              		.loc 1 73 29 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  32              		.loc 1 102 1 view .LVU1
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE69:
+  37              		.section	.text.StartDefaultTask,"ax",%progbits
+  38              		.align	1
+  39              		.global	StartDefaultTask
+  40              		.syntax unified
+  41              		.thumb
+  42              		.thumb_func
+  43              		.fpu softvfp
+  45              	StartDefaultTask:
+  46              	.LFB70:
+  47              		.loc 1 112 1 view -0
+  48              		.cfi_startproc
+  49              		@ Volatile: function does not return.
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              	.LVL0:
+  53              		.loc 1 112 1 is_stmt 0 view .LVU3
+  54 0000 08B5     		push	{r3, lr}
+  55              	.LCFI0:
+  56              		.cfi_def_cfa_offset 8
+  57              		.cfi_offset 3, -8
+  58              		.cfi_offset 14, -4
+  59              	.LVL1:
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s 			page 2
+
+
+  60              	.L3:
+  61              		.loc 1 115 3 is_stmt 1 discriminator 1 view .LVU4
+  62              		.loc 1 117 5 discriminator 1 view .LVU5
+  63 0002 0120     		movs	r0, #1
+  64 0004 014B     		ldr	r3, .L5
+  65 0006 9847     		blx	r3
+  66              	.LVL2:
+  67              		.loc 1 115 8 discriminator 1 view .LVU6
+  68 0008 FBE7     		b	.L3
+  69              	.L6:
+  70 000a 00BF     		.align	2
+  71              	.L5:
+  72 000c 00000000 		.word	osDelay
+  73              		.cfi_endproc
+  74              	.LFE70:
+  76              		.global	defaultTask_attributes
+  77              		.section	.rodata.str1.4,"aMS",%progbits,1
+  78              		.align	2
+  79              	.LC0:
+  80 0000 64656661 		.ascii	"defaultTask\000"
+  80      756C7454 
+  80      61736B00 
+  81              		.comm	defaultTaskHandle,4,4
+  82              		.section	.rodata.defaultTask_attributes,"a"
+  83              		.align	2
+  86              	defaultTask_attributes:
+  87 0000 00000000 		.word	.LC0
+  88 0004 00000000 		.space	16
+  88      00000000 
+  88      00000000 
+  88      00000000 
+  89 0014 00020000 		.word	512
+  90 0018 18000000 		.word	24
+  91 001c 00000000 		.space	8
+  91      00000000 
+  92              		.text
+  93              	.Letext0:
+  94              		.file 2 "../c:\\users\\marko micovic\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi
+  95              		.file 3 "../c:\\users\\marko micovic\\desktop\\gnu mcu\\arm-none-eabi-gcc-9.3.1-1.1\\arm-none-eabi
+  96              		.file 4 "../Core/Inc/FreeRTOSConfig.h"
+  97              		.file 5 "../Drivers/CMSIS/Include/core_cm3.h"
+  98              		.file 6 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+  99              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 100              		.file 8 "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h"
+ARM GAS  C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s 			page 3
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 freertos.c
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:16     .text.MX_FREERTOS_Init:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:24     .text.MX_FREERTOS_Init:0000000000000000 MX_FREERTOS_Init
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:38     .text.StartDefaultTask:0000000000000000 $t
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:45     .text.StartDefaultTask:0000000000000000 StartDefaultTask
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:72     .text.StartDefaultTask:000000000000000c $d
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:86     .rodata.defaultTask_attributes:0000000000000000 defaultTask_attributes
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:78     .rodata.str1.4:0000000000000000 $d
+                            *COM*:0000000000000004 defaultTaskHandle
+C:\Users\MARKOM~1\AppData\Local\Temp\ccCeo0zh.s:83     .rodata.defaultTask_attributes:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+osDelay
